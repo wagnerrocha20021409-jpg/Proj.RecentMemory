@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj": {}
+    "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj": {
+    "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj",
+        "projectUniqueName": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj",
         "projectName": "RecentMemory",
-        "projectPath": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj",
-        "packagesPath": "C:\\Users\\priscila.lsjoao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\",
+        "projectPath": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj",
+        "packagesPath": "C:\\Users\\wagner.roliveira6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\priscila.lsjoao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wagner.roliveira6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
