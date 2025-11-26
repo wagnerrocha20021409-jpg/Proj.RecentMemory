@@ -17,16 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    [Route("privacy")]
     public IActionResult Privacy()
     {
         return View();
-    }
-        // Adicionar um comentario
-        // Wagner estou adicionando um comentariooooooo//
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
  /* Adicionando */

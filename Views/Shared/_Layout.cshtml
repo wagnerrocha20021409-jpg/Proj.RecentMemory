@@ -20,15 +20,19 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Lembretes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Contatos</a>
-                        </li>
+                        
                           <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Lugares" asp-action="Index">Lugares</a>
+                            <a class="nav-link text-dark" asp-controller="Lugares" asp-action="Index">Lugares</a>
                         </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Lembretes" asp-action="Index">Lembretes</a>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contatos" asp-action="Index">Contatos</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
