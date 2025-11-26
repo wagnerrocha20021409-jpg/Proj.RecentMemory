@@ -3,11 +3,11 @@ using RecentMemory.Contexts;
 
 namespace RecentMemory.Controllers
 {
-    [Route ("[Controller]")]
-    public class LembretesControler : Controller
+    [Route("[controller]")]
+    public class LembretesController : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
-        public IActionResult index()
+        public IActionResult Index()
         {
             var listaLembretes = context.Lugares.ToList();
 
