@@ -4,7 +4,7 @@ using RecentMemory.Contexts;
 namespace RecentMemory.Controllers
 {
     [Route ("[Controller]")]
-    public class LugaresControler : Controller
+    public class LugaresController : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
         public IActionResult Index()

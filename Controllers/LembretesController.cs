@@ -4,7 +4,7 @@ using RecentMemory.Contexts;
 namespace RecentMemory.Controllers
 {
     [Route ("[Controller]")]
-    public class LembretesControler : Controller
+    public class LembretesController : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
         public IActionResult index()
