@@ -3,7 +3,7 @@ using RecentMemory.Contexts;
 
 namespace RecentMemory.Controllers
 {
-    [Route("[controller]")]
+    [Route ("[Controller]")]
     public class LugaresController : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
