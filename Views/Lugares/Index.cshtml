@@ -1,0 +1,23 @@
+@page
+
+
+
+
+
+<div>
+<h1>Tela de Lugares</h1>
+
+    <form method="POST" asp-action="CadastrarLugares" asp-controller="Lugares" enctype="multipart/form-data">
+        <div class="form-control">
+            <label for="nome">Nome do Lugar</label>
+            <input type="text" name="Nome" >
+        </div>
+
+        <div class="form-control">
+            <label for="Imagem">Imagem do Lugar</label>
+            <input type="file" name="Imagem" >
+        </div>
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
+    </form>
+    
+</div>
