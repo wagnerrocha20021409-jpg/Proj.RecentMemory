@@ -7,7 +7,7 @@ namespace RecentMemory.Controllers
     public class LugaresControler : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
-        public IActionResult index()
+        public IActionResult Index()
         {
             var listaLugares = context.Lugares.ToList();
 
