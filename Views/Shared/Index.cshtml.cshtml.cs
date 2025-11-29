@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Proj.RecentMemory.Views.Lugares
+namespace RecentMemory.Views.Shared
 {
-    public class Index : PageModel
+    public class Index.cshtml : PageModel
     {
-        private readonly ILogger<Index> _logger;
+        private readonly ILogger<Index.cshtml> _logger;
 
-        public Index(ILogger<Index> logger)
+        public Index.cshtml(ILogger<Index.cshtml> logger)
         {
             _logger = logger;
         }
@@ -22,4 +22,3 @@ namespace Proj.RecentMemory.Views.Lugares
         }
     }
 }
-

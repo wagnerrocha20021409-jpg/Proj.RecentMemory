@@ -219,3 +219,4 @@ C:\Users\wagner.roliveira6\OneDrive - SENAC - SP\Área de Trabalho\RecentMemory\
 C:\Users\wagner.roliveira6\OneDrive - SENAC - SP\Área de Trabalho\RecentMemory\RecentMemory\obj\Debug\net9.0\RecentMemory.pdb
 C:\Users\wagner.roliveira6\OneDrive - SENAC - SP\Área de Trabalho\RecentMemory\RecentMemory\obj\Debug\net9.0\RecentMemory.genruntimeconfig.cache
 C:\Users\wagner.roliveira6\OneDrive - SENAC - SP\Área de Trabalho\RecentMemory\RecentMemory\obj\Debug\net9.0\ref\RecentMemory.dll
+C:\Users\wagner.roliveira6\OneDrive - SENAC - SP\Área de Trabalho\RecentMemory\RecentMemory\obj\Debug\net9.0\compressed\wrjs9q1hw2-0tofi2blrg.gz

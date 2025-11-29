@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Proj.RecentMemory.Views.Lugares
+namespace RecentMemory.Views.Lembretes
 {
     public class Index : PageModel
     {
@@ -22,4 +22,3 @@ namespace Proj.RecentMemory.Views.Lugares
         }
     }
 }
-
