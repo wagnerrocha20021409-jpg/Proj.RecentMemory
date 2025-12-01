@@ -1,89 +1,73 @@
 @page
 
-    <div>
-        <h1>Tela de Lugares</h1>
+<h1>Tela de Lugares</h1>
 
-        <form >
-            
+<header>Lembretes de Lugares</header>
+<div class="container">
+    <h2>Meus Lugares</h2>
+    <ul>
+        <li>
+            <span>Praia - Sábado às 10h</span>
+            <button class="btn">Editar</button>
+        </li>
+        <li>
+            <span>Parque - Domingo às 15h</span>
+            <button class="btn">Editar</button>
+        </li>
+        <li>
+            <span>Café Central - Segunda às 9h</span>
+            <button class="btn">Editar</button>
 
-<head>
- 
-    <title>Lembretes de Lugares</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fa;
-            margin: 0;
-            padding: 0;
-        }
+        </li>
+    </ul>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fa;
+        margin: 0;
+        padding: 0;
+    }
 
 
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 
-        li {
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-        }
+    li {
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s;
+    }
 
-        li:hover {
-            background: #c8e6c9;
-        }
+    li:hover {
+        background: #c8e6c9;
+    }
 
-        .btn {
-            background:blue;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .btn {
+        background: blue;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-        .btn:hover {
-            background: blue;
-        }
+    .btn:hover {
+        background: blue;
+    }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <header>Lembretes de Lugares</header>
-    <div class="container">
-        <h2>Meus Lugares</h2>
-        <ul>
-            <li>
-                <span>Praia - Sábado às 10h</span>
-                <button class="btn">Editar</button>
-            </li>
-            <li>
-                <span>Parque - Domingo às 15h</span>
-                <button class="btn">Editar</button>
-            </li>
-            <li>
-                <span>Café Central - Segunda às 9h</span>
-                <button class="btn">Editar</button>
-                
-            </li>
-        </ul>
-    </div>
-   
-    <footer>&copy; 2025 Meus Lembretes</footer>
-</body>
-</html>
-
-        </form>
-        
-    </div>
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 0.9em;
+        color: #777;
+    }
+</style>
