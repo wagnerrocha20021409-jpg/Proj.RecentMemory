@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HIrFp67tESia1zvPbAcLLjvQaZ1P0O12+gQOBw0CpIk=",
+  "Hash": "f137soY36SYmxcuqNzBS50bwm32EvieaOWDbEjSi7V8=",
   "Source": "RecentMemory",
   "BasePath": "_content/RecentMemory",
   "Mode": "Default",
@@ -1298,6 +1298,27 @@
       "OriginalItemSpec": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wrjs9q1hw2-0tofi2blrg.gz",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/logo#[.{fingerprint=0tofi2blrg}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "c0fycmxhrm",
+      "Integrity": "fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg"
+    },
+    {
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wte72d21pe-gk0pw8i4co.gz",
       "SourceId": "RecentMemory",
       "SourceType": "Discovered",
@@ -1443,6 +1464,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\download.png",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/download#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eqxfkh2bef",
+      "Integrity": "hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\download.png"
+    },
+    {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0tofi2blrg",
+      "Integrity": "rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\logo.svg"
     },
     {
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\js\\site.js",
@@ -3320,6 +3383,386 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/download.eqxfkh2bef.png",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\download.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1922"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eqxfkh2bef"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/download.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/download.png",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\download.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1922"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.0tofi2blrg.svg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wrjs9q1hw2-0tofi2blrg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000219635405"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4552"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tofi2blrg"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.0tofi2blrg.svg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10679"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tofi2blrg"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.0tofi2blrg.svg.gz",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wrjs9q1hw2-0tofi2blrg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tofi2blrg"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/logo.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.svg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wrjs9q1hw2-0tofi2blrg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000219635405"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4552"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.svg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10679"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rEomIn4oHl+CHxu99BHsrJa7FMy40ZxmlQEIFjN+gVY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/logo.svg.gz",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\Debug\\net9.0\\compressed\\wrjs9q1hw2-0tofi2blrg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Dec 2025 23:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY="
         }
       ]
     },
@@ -21310,7 +21753,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21363,7 +21806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21400,7 +21843,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21447,7 +21890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21500,7 +21943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21537,7 +21980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21584,7 +22027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21645,7 +22088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21690,7 +22133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21745,7 +22188,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21806,7 +22249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21851,7 +22294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 01 Dec 2025 23:12:54 GMT"
+          "Value": "Tue, 02 Dec 2025 00:56:21 GMT"
         },
         {
           "Name": "Cache-Control",

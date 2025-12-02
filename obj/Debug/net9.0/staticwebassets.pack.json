@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\download.png",
+      "PackagePath": "staticwebassets\\imagem\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
+      "PackagePath": "staticwebassets\\imagem\\logo.svg"
+    },
+    {
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
