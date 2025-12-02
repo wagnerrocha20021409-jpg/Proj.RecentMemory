@@ -1,89 +1,119 @@
-@page
+@{
+    ViewBag.Title = "Lugares";
+}
 
-    <div>
-        <h1>Tela de Lugares</h1>
+<div class="container mt-5">
 
-        <form >
-            
+    <div class="text-center mb-4">
+        <h1 class="fw-bold">Lugares e Acessibilidade</h1>
+        <p class="text-muted">Exemplo visual de alta qualidade com imagens reais</p>
 
-<head>
- 
-    <title>Lembretes de Lugares</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fa;
-            margin: 0;
-            padding: 0;
-        }
-
-
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
-        }
-
-        li:hover {
-            background: #c8e6c9;
-        }
-
-        .btn {
-            background:blue;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: blue;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <header>Lembretes de Lugares</header>
-    <div class="container">
-        <h2>Meus Lugares</h2>
-        <ul>
-            <li>
-                <span>Praia - Sábado às 10h</span>
-                <button class="btn">Editar</button>
-            </li>
-            <li>
-                <span>Parque - Domingo às 15h</span>
-                <button class="btn">Editar</button>
-            </li>
-            <li>
-                <span>Café Central - Segunda às 9h</span>
-                <button class="btn">Editar</button>
-                
-            </li>
-        </ul>
+        <a class="btn btn-primary btn-lg mt-2">+ Adicionar Lugar</a>
     </div>
-   
-    <footer>&copy; 2025 Meus Lembretes</footer>
-</body>
-</html>
 
-        </form>
-        
+    <div class="row g-4">
+
+        <!-- SHOPPING -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1543373014-cfe4f2cdda20?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Shopping Central</h4>
+                    <p class="text-muted">Av. Principal, 123</p>
+                    <div>
+                        <span class="badge bg-success">Rampa</span>
+                        <span class="badge bg-info">Banheiro Adaptado</span>
+                        <span class="badge bg-warning text-dark">Elevador</span>
+                        <span class="badge bg-dark">Vaga PCD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIBLIOTECA -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Biblioteca Municipal</h4>
+                    <p class="text-muted">Rua dos Estudantes, 450</p>
+                    <div>
+                        <span class="badge bg-success">Rampa</span>
+                        <span class="badge bg-primary">Piso Tátil</span>
+                        <span class="badge bg-info">Banheiro Adaptado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CENTRO CULTURAL -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8fa?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Centro Cultural</h4>
+                    <p class="text-muted">Praça Central, 22</p>
+                    <div>
+                        <span class="badge bg-info">Banheiro Adaptado</span>
+                        <span class="badge bg-dark">Vaga PCD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESTAURANTE -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Restaurante Sabor & Arte</h4>
+                    <p class="text-muted">Av. Gourmet, 900</p>
+                    <div>
+                        <span class="badge bg-success">Rampa</span>
+                        <span class="badge bg-info">Banheiro Adaptado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARQUE -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Parque das Flores</h4>
+                    <p class="text-muted">Av. Verde, 77</p>
+                    <div>
+                        <span class="badge bg-success">Acesso Nivelado</span>
+                        <span class="badge bg-primary">Piso Tátil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOSPITAL -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8a1?auto=format&fit=crop&w=900&q=60"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">Hospital Vida</h4>
+                    <p class="text-muted">Rua Saúde, 1000</p>
+                    <div>
+                        <span class="badge bg-success">Rampa</span>
+                        <span class="badge bg-warning text-dark">Elevador</span>
+                        <span class="badge bg-info">Banheiro Adaptado</span>
+                        <span class="badge bg-dark">Vaga PCD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+</div>
