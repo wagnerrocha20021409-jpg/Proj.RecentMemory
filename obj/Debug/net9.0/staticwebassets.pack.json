@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\imagem\\download.png"
     },
     {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\login.imagem.png",
+      "PackagePath": "staticwebassets\\imagem\\login.imagem.png"
+    },
+    {
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
       "PackagePath": "staticwebassets\\imagem\\logo.svg"
     },

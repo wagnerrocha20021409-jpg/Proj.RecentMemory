@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f137soY36SYmxcuqNzBS50bwm32EvieaOWDbEjSi7V8=",
+  "Hash": "/U6TzL9e7t7418NZC4Y3/dO6PzN6rUELTj8xPfcstEw=",
   "Source": "RecentMemory",
   "BasePath": "_content/RecentMemory",
   "Mode": "Default",
@@ -1485,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\download.png"
+    },
+    {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\login.imagem.png",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/login.imagem#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fdmrrnizwo",
+      "Integrity": "A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\login.imagem.png"
     },
     {
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\logo.svg",
@@ -3465,6 +3486,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/login.imagem.fdmrrnizwo.png",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\login.imagem.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:25:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fdmrrnizwo"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/login.imagem.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/login.imagem.png",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\login.imagem.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:25:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM="
         }
       ]
     },

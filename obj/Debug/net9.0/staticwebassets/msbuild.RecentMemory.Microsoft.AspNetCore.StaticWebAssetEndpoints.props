@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1922"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Dec 2025 23:07:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecentMemory/imagem/login.imagem.fdmrrnizwo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagem\login.imagem.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fdmrrnizwo"},{"Name":"integrity","Value":"sha256-A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM="},{"Name":"label","Value":"_content/RecentMemory/imagem/login.imagem.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"201066"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 00:25:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecentMemory/imagem/login.imagem.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagem\login.imagem.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"201066"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022A0EujicHq1Jy8hZAls6LOdSTBZKIdOH3nBfOMtYixPM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Dec 2025 00:25:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecentMemory/imagem/logo.0tofi2blrg.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagem\logo.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
