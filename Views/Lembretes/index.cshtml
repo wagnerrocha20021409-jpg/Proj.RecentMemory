@@ -2,4 +2,25 @@
 
 <div>
     <h1>Lembretes</h1>
+
+     
+        <div class="col-md-4 mb-3">
+            <a href="/lembretes" class="card border-0 shadow-sm text-decoration-none" style="transition: transform 0.2s, box-shadow 0.2s;">
+                <div class="card-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div style="width: 50px; height: 50px; background: #e0f2fe; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h6 class="mb-0" style="color: #1f2937;">Lembretes</h6>
+                            <small class="text-muted">@ViewBag.TotalLembretes @(ViewBag.TotalLembretes != 1 ? "itens" : "item")</small>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
 </div>

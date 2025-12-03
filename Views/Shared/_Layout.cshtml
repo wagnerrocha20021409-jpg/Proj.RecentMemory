@@ -12,34 +12,63 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RecentMemory</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RecentMemory</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Lembretes" asp-action="Index">Lembretes</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Lembretes" asp-action="Index">Lembretes</a>
+                            </li>
 
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contatos" asp-action="Index">Contatos</a>
-                        </li>
-                        
-                          <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Lugares" asp-action="Index">Lugares</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Contatos" asp-action="Index">Contatos</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Lugares" asp-action="Index">Lugares</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        
-
-                    </ul>
+                    <!-- Seção de perfil  -->
+                <div class="d-flex align-items-center gap-3" style="border-left: 1px solid #e5e7eb; padding-left: 1.5rem;">
+                    <div style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">
+                        <img  style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%;" src="/imagem/39779.png" alt="Foto de perfil">
+                    </div>
+                    <div "card-body">
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <div class="d-none d-md-block">
+                                <p class="mb-0" style="color: #1f2937; font-weight: 600; font-size: 0.95rem;">Olá!</p>
+                                <small class="text-muted" style="font-size: 0.85rem;">Entrar/ Registrar</small>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 0.35rem 0.65rem; border: 1px solid #d1d5db;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                            <li><a class="dropdown-item" href="#perfil" style="color: #4b5563;">Meu Perfil</a></li>
+                            <li><a class="dropdown-item" href="#configuracoes" style="color: #4b5563;">Configurações</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/login" style="color: #ef4444;">Sair</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+      </nav>
+            </div>
         </nav>
-    </header>
+</header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
