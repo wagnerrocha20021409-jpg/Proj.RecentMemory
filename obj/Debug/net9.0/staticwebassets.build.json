@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Woka46G309HZmrEj5MDf5WryZjhfepRO/RH3SE43IOc=",
+  "Hash": "oLU5Hf5ZEyW3z6VWTZlTOo/4dF7FeNRWUPEsZ4g1v8Y=",
   "Source": "RecentMemory",
   "BasePath": "_content/RecentMemory",
   "Mode": "Default",
@@ -1466,6 +1466,69 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\39779.png",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/39779#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4s53ta5ac",
+      "Integrity": "s3R9Oe9UIlNF4a6zXQobw6mhBsQdnc631dMPFQVcRIc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\39779.png"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Cent.cult..jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/Cent.cult.#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l837crc5tr",
+      "Integrity": "2xvzb05/kzb/RgcRItrEPIL3uhHdCsPFY2gjYKg2fP8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\Cent.cult..jpg"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/download#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qv801ffxzs",
+      "Integrity": "9pmkC4qOncRhCkh5CmviLvT5U9d1HsKKi081FuV/10o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\download.jpg"
+    },
+    {
       "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.png",
       "SourceId": "RecentMemory",
       "SourceType": "Discovered",
@@ -1487,6 +1550,48 @@
       "OriginalItemSpec": "wwwroot\\imagem\\download.png"
     },
     {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\fundo.jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/fundo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "12s7di08tk",
+      "Integrity": "N8EujxptdACGpDoqOZGUK2lgSsE7v1MLjgke8jE0XD0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\fundo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Hospital.webp",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/Hospital#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "19x6kb49xb",
+      "Integrity": "K/IbZfU55KblhRRrXbMlfATVwKmXlLUoN8eNnx1ZMxo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\Hospital.webp"
+    },
+    {
       "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\logo.svg",
       "SourceId": "RecentMemory",
       "SourceType": "Discovered",
@@ -1506,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\logo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\shop.jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/shop#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l9q8nz88ye",
+      "Integrity": "B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\shop.jpg"
     },
     {
       "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\js\\site.js",
@@ -3387,6 +3513,170 @@
       ]
     },
     {
+      "Route": "imagem/39779.png",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\39779.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s3R9Oe9UIlNF4a6zXQobw6mhBsQdnc631dMPFQVcRIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 02 Dec 2025 22:46:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s3R9Oe9UIlNF4a6zXQobw6mhBsQdnc631dMPFQVcRIc="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/39779.z4s53ta5ac.png",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\39779.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s3R9Oe9UIlNF4a6zXQobw6mhBsQdnc631dMPFQVcRIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 02 Dec 2025 22:46:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4s53ta5ac"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/39779.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s3R9Oe9UIlNF4a6zXQobw6mhBsQdnc631dMPFQVcRIc="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Cent.cult..jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Cent.cult..jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2xvzb05/kzb/RgcRItrEPIL3uhHdCsPFY2gjYKg2fP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:20:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2xvzb05/kzb/RgcRItrEPIL3uhHdCsPFY2gjYKg2fP8="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Cent.cult..l837crc5tr.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Cent.cult..jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2xvzb05/kzb/RgcRItrEPIL3uhHdCsPFY2gjYKg2fP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:20:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l837crc5tr"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/Cent.cult..jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2xvzb05/kzb/RgcRItrEPIL3uhHdCsPFY2gjYKg2fP8="
+        }
+      ]
+    },
+    {
       "Route": "imagem/download.eqxfkh2bef.png",
       "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.png",
       "Selectors": [],
@@ -3432,6 +3722,43 @@
       ]
     },
     {
+      "Route": "imagem/download.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9pmkC4qOncRhCkh5CmviLvT5U9d1HsKKi081FuV/10o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:14:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9pmkC4qOncRhCkh5CmviLvT5U9d1HsKKi081FuV/10o="
+        }
+      ]
+    },
+    {
       "Route": "imagem/download.png",
       "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.png",
       "Selectors": [],
@@ -3465,6 +3792,215 @@
         {
           "Name": "integrity",
           "Value": "sha256-hrDVqFcdqFly4IQRfWM4POyub1/kxIFxI4Ed6DSiVwM="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/download.qv801ffxzs.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\download.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9pmkC4qOncRhCkh5CmviLvT5U9d1HsKKi081FuV/10o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:14:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qv801ffxzs"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/download.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9pmkC4qOncRhCkh5CmviLvT5U9d1HsKKi081FuV/10o="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/fundo.12s7di08tk.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\fundo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8EujxptdACGpDoqOZGUK2lgSsE7v1MLjgke8jE0XD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:51:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12s7di08tk"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/fundo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8EujxptdACGpDoqOZGUK2lgSsE7v1MLjgke8jE0XD0="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/fundo.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\fundo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8EujxptdACGpDoqOZGUK2lgSsE7v1MLjgke8jE0XD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:51:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8EujxptdACGpDoqOZGUK2lgSsE7v1MLjgke8jE0XD0="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Hospital.19x6kb49xb.webp",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Hospital.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K/IbZfU55KblhRRrXbMlfATVwKmXlLUoN8eNnx1ZMxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:17:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "19x6kb49xb"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/Hospital.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/IbZfU55KblhRRrXbMlfATVwKmXlLUoN8eNnx1ZMxo="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Hospital.webp",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Hospital.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K/IbZfU55KblhRRrXbMlfATVwKmXlLUoN8eNnx1ZMxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:17:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/IbZfU55KblhRRrXbMlfATVwKmXlLUoN8eNnx1ZMxo="
         }
       ]
     },
@@ -3763,6 +4299,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-fHTc+0qnL5g0ITb6t1dToNEPT498P5sugNU9jtn8fSY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/shop.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\shop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:23:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/shop.l9q8nz88ye.jpg",
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\shop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 03 Dec 2025 00:23:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l9q8nz88ye"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/shop.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU="
         }
       ]
     },
