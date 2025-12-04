@@ -1,72 +1,56 @@
 
 using Microsoft.AspNetCore.Mvc;
-using RecentMemory.Models;
+using Microsoft.EntityFrameworkCore;
 using RecentMemory.Contexts;
+// using RecentMemory.Models; // caso tenha entidade Usuario
+using System.Linq;
 
 namespace RecentMemory.Controllers
 {
     public class LoginController : Controller
     {
-        [HttpGet]
-        [Route("Login")]
+         RecentMemoryContext context = new RecentMemoryContext();
+
         public IActionResult Index()
         {
             return View();
         }
 
+        // POST /Login (Processa credenciais)
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Route("Login")]
         public IActionResult Login(string email, string password)
         {
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            // Validação básica de entrada
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                ViewBag.Erro = "Email e senha são obrigatórios";
-                return View();
+                ViewBag.Erro = "Email e senha são obrigatórios.";
+                return View("Index");
             }
 
-            // Validação simples (implementar com banco de dados real)
-            if (email == "test@example.com" && password == "123456")
+            // Buscar usuário por email
+            var usuario = context.Usuarios.FirstOrDefault(u => u.Email == email);
+
+            // Se não encontrou ou senha inválida (exemplo simples, sem hash)
+            if (usuario == null || usuario.Senha != password)
             {
-                HttpContext.Session.SetString("Usuario", email);
-                HttpContext.Session.SetString("NomeUsuario", "João Silva");
-                return RedirectToAction("Index", "Home");
+                //  Teste
+                if (email == "test@example.com" && password == "123456")
+                {
+                    HttpContext.Session.SetString("Usuario", email);
+                    HttpContext.Session.SetString("NomeUsuario", "João Silva");
+
+                    return RedirectToAction("Index", "Home");
+                }
+
+                ViewBag.Erro = "Email ou senha inválidos.";
+
+                return View("Index");
             }
+           
+            HttpContext.Session.SetString("Usuario", usuario.Email);
+            HttpContext.Session.SetString("NomeUsuario", usuario.Nome);
 
-            ViewBag.Erro = "Email ou senha inválidos";
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Route("auth/register")]
-        public IActionResult Register(string nome, string email, string password, string confirmPassword)
-        {
-            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
-            {
-                ViewBag.ErroRegistro = "Todos os campos são obrigatórios";
-                return View("Login");
-            }
-
-            if (password != confirmPassword)
-            {
-                ViewBag.ErroRegistro = "As senhas não conferem";
-                return View("Login");
-            }
-
-            HttpContext.Session.SetString("Usuario", email);
-            HttpContext.Session.SetString("NomeUsuario", nome);
-            
-            ViewBag.SucessoRegistro = "Cadastro realizado com sucesso! Você será redirecionado em 2 segundos...";
-            return View("Login");
-        }
-
-        [HttpGet]
-        [Route("auth/logout")]
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToAction("Login");
+            return RedirectToAction("Index", "Home");
         }
     }
 }
