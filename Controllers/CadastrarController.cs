@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -20,7 +22,6 @@ namespace RecentMemory.Controllers
         }
 
         [HttpPost]
-
         [Route("Cadastrar")]
         public IActionResult Cadastrar(string nome, string email, string password, string confirmPassword)
         {
@@ -30,18 +31,39 @@ namespace RecentMemory.Controllers
                 return View("Login");
             }
 
-            if (password != confirmPassword)
+             if (password != confirmPassword)
             {
                 ViewBag.ErroRegistro = "As senhas não conferem";
-                return View("Login");
+                return RedirectToAction("Index");
             }
 
-            HttpContext.Session.SetString("Usuario", Usuario.Email);
-            HttpContext.Session.SetString("NomeUsuario", usuario.Nome);
+            if (password.Length < 8)
+            {
+                ViewBag.ErroRegistro = "A senha deve ter pelo menos 8 caracteres";
+                return RedirectToAction("Index");
+            }
+
+            if (context.Usuarios.Any(u => u.Email == email))
+            {
+                ViewBag.ErroRegistro = "Este email já está cadastrado";
+                return RedirectToAction("Index");
+            }
+
+            var novoUsuario = new Usuario
+            {
+                Nome = nome,
+                Email = email,
+                Senha = password
+            };
+
+            context.Usuarios.Add(novoUsuario);
+
+            context.SaveChanges();
 
             return RedirectToAction("Index", "Home");
-
-            
         }
     }
 }
+
+            
+            

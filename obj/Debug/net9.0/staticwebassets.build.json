@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lXVxwNW5X1jem7zi+lAVYV30hTS94yxgsj7EedIn/Aw=",
+  "Hash": "E895R4xNKsTeuRbTMxQmu6mWNSw3TvYsrBx81QKxtHk=",
   "Source": "RecentMemory",
   "BasePath": "_content/RecentMemory",
   "Mode": "Default",
@@ -1634,6 +1634,27 @@
       "OriginalItemSpec": "wwwroot\\imagem\\logo.svg"
     },
     {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\medica.jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/medica#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4pqup5ukjb",
+      "Integrity": "qK+b9MOtthRsNGziVoFxVB5xuU9RWU2nVSzMLOpv4Ho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\medica.jpg"
+    },
+    {
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Selection.png",
       "SourceId": "RecentMemory",
       "SourceType": "Discovered",
@@ -1674,6 +1695,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\shop.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinha.jpg",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/vizinha#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "of1v7p6ajd",
+      "Integrity": "BGTzQ8CvXZ45Mx9MHM5YBp67pRHDqDquMGRQCelm0vw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\vizinha.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinho.webp",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/vizinho#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i8h2f7mjk8",
+      "Integrity": "ws76/NVZk8gVYC6JKh5FZamb76ySJgJCG6TjrjrnRTI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\vizinho.webp"
     },
     {
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\js\\site.js",
@@ -4427,6 +4490,88 @@
       ]
     },
     {
+      "Route": "imagem/medica.4pqup5ukjb.jpg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\medica.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qK+b9MOtthRsNGziVoFxVB5xuU9RWU2nVSzMLOpv4Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4pqup5ukjb"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/medica.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qK+b9MOtthRsNGziVoFxVB5xuU9RWU2nVSzMLOpv4Ho="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/medica.jpg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\medica.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qK+b9MOtthRsNGziVoFxVB5xuU9RWU2nVSzMLOpv4Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qK+b9MOtthRsNGziVoFxVB5xuU9RWU2nVSzMLOpv4Ho="
+        }
+      ]
+    },
+    {
       "Route": "imagem/Selection.png",
       "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Selection.png",
       "Selectors": [],
@@ -4587,6 +4732,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-B2bTKxP0gGOBxaFWCOBrcW+0UgYWwtM7niXMquB/DaU="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/vizinha.jpg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinha.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BGTzQ8CvXZ45Mx9MHM5YBp67pRHDqDquMGRQCelm0vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BGTzQ8CvXZ45Mx9MHM5YBp67pRHDqDquMGRQCelm0vw="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/vizinha.of1v7p6ajd.jpg",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinha.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BGTzQ8CvXZ45Mx9MHM5YBp67pRHDqDquMGRQCelm0vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "of1v7p6ajd"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/vizinha.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BGTzQ8CvXZ45Mx9MHM5YBp67pRHDqDquMGRQCelm0vw="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/vizinho.i8h2f7mjk8.webp",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinho.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "120920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ws76/NVZk8gVYC6JKh5FZamb76ySJgJCG6TjrjrnRTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8h2f7mjk8"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/vizinho.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ws76/NVZk8gVYC6JKh5FZamb76ySJgJCG6TjrjrnRTI="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/vizinho.webp",
+      "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinho.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "120920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ws76/NVZk8gVYC6JKh5FZamb76ySJgJCG6TjrjrnRTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 04 Dec 2025 01:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ws76/NVZk8gVYC6JKh5FZamb76ySJgJCG6TjrjrnRTI="
         }
       ]
     },
@@ -22577,7 +22886,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22630,7 +22939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22667,7 +22976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22714,7 +23023,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22767,7 +23076,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22804,7 +23113,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22851,7 +23160,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22912,7 +23221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22957,7 +23266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23012,7 +23321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23073,7 +23382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23118,7 +23427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Dec 2025 21:43:54 GMT"
+          "Value": "Fri, 05 Dec 2025 00:07:34 GMT"
         },
         {
           "Name": "Cache-Control",

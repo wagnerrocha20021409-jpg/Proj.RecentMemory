@@ -49,8 +49,20 @@
       "PackagePath": "staticwebassets\\imagem\\logo.svg"
     },
     {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\medica.jpg",
+      "PackagePath": "staticwebassets\\imagem\\medica.jpg"
+    },
+    {
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\shop.jpg",
       "PackagePath": "staticwebassets\\imagem\\shop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinha.jpg",
+      "PackagePath": "staticwebassets\\imagem\\vizinha.jpg"
+    },
+    {
+      "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\vizinho.webp",
+      "PackagePath": "staticwebassets\\imagem\\vizinho.webp"
     },
     {
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\js\\site.js",

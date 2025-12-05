@@ -1,28 +1,137 @@
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+<style>
+    .btn-add-contact {
+        background-color: #0ea5e9;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-add-contact:hover {
+        background-color: #0284c7;
+    }
+
+    .contacts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .contact-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .avatar-container {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+    }
+
+    .avatar-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #f0f0f0;
+    }
+
+    .status-online {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #10b981;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+
+    .contact-name {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1f2937;
+        margin: 10px 0 5px;
+    }
+
+    .contact-profissao {
+        font-size: 14px;
+        color: #6b7280;
+        margin-bottom: 15px;
+    }
+
+    .btn-call {
+        width: 100%;
+        background-color: #0ea5e9;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .btn-call:hover {
+        background-color: #0284c7;
+    }
+
+    .title-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title-section h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1f2937;
+    }
+
+    .no-contacts {
+        text-align: center;
+        padding: 40px;
+        color: #6b7280;
+    }
+</style>
 
 <div class="container mt-4">
+    <!-- Botão Adicionar Contato -->
+    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+        <button class="btn-add-contact" data-bs-toggle="modal" data-bs-target="#novoContatoModal">
+           <i class="bi bi-telephone-plus"></i> Adicionar Contato
+        </button>
+    </div>
 
-    <!-- Top Bar -->
-    
-        <div>
-            <h1>Contatos</h1>
+    <!-- Lista -->
+    <div class="title-section">
+        <h1>Contatos</h1>
+    </div>
 
-            <!-- Botão adicionar -->
-            <div class="text-center mb-4">
-                <button class="btn btn-primary px-4">
-                    <i class="bi bi-telephone-plus"></i> Adicionar Contato
-                </button>
-            </div>
+    <div class="row g-4 justify-content-center">
 
-            <!-- Lista -->
-            
-            <div class="contact-box p-4 mx-auto">
-
-                <h5 class="text-center mb-4">Contatos</h5>
-                
-
-                <div class="row g-4 justify-content-center">
-
-                    <!-- Card 1 -->
+             <!-- Card 1 -->
             
                             <div class="col-md-4 col-sm-6">
                                 <div style class="contact-card p-3">
@@ -77,25 +186,85 @@
 
         </div>
 
-        <!-- Bottom Nav -->
-<div class="bottom-nav d-flex justify-content-around align-items-center">
-    <a href="@Url.Action("Index", "Home")" class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")">
-        <i class="bi bi-house"></i>
-    </a>
 
-    <a href="@Url.Action("Index", "Notificacoes")" class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Notificacoes" ? "active" : "")">
-        <i class="bi bi-bell"></i>
-    </a>
-
-    <a href="@Url.Action("Index", "Contato")" class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Contato" ? "active" : "")">
-        <i class="bi bi-telephone"></i>
-    </a>
-
-    <a href="@Url.Action("Index", "Config")" class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Config" ? "active" : "")">
-        <i class="bi bi-gear"></i>
-    </a>
+<!-- Modal Novo Contato -->
+<div class="modal fade" id="novoContatoModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Novo Contato</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" action="/contatos/criar">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="profissao" class="form-label">Profissão</label>
+                        <input type="text" class="form-control" id="profissao" name="profissao">
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Criar Contato</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
-
+<!-- Modal Editar Contato -->
+<div class="modal fade" id="editarContatoModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Editar Contato</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" id="formEditar">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nomeEditar" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeEditar" name="nome" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefoneEditar" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefoneEditar" name="telefone" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="profissaoEditar" class="form-label">Profissão</label>
+                        <input type="text" class="form-control" id="profissaoEditar" name="profissao">
+                    </div>
+                    <div class="mb-3">
+                        <label for="avatarEditar" class="form-label">URL da Imagem de Avatar</label>
+                        <input type="url" class="form-control" id="avatarEditar" name="avatar">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar Contato</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
+<script>
+    function preencherEdicao(id, nome, email, telefone, endereco, profissao, avatar) {
+        document.getElementById('nomeEditar').value = nome;
+        document.getElementById('telefoneEditar').value = telefone;
+        document.getElementById('profissaoEditar').value = profissao;
+        document.getElementById('formEditar').action = `/contatos/editar/${id}`;
+    }
+</script>
