@@ -1,123 +1,136 @@
 @{
-    ViewBag.Title = "Lugares";
+    ViewData["Title"] = "Lugares";
 }
 
-<div class="container mt-5">
+<div class="container mt-4">
+        <!--  Adicionar -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Cada destino, uma lembrança.</h1>
+            <p class="text-muted">Porque alguns lugares merecem ser lembrados.</p>
 
-    <div class="text-center mb-4">
-        <h1 class="fw-bold">Cada destino, uma lembrança.</h1>
-        <p class="text-muted">Porque alguns lugares merecem ser lembrados.</p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novoLugarModal" style="background-color: #0ea5e9; border: none; padding: 12px 30px; border-radius: 8px;">
+                📍 Adicionar lugar
+            </button>
+        </div>
 
-       <button class="btn btn-primary btn-lg mt-2">+ Adicionar Lugar</button>
+        <!-- Seus Favoritos -->
+        <div class="mb-3">
+            <h2 class="mb-3+" style="font-weight: 600; font-size: 20px;">Seus Favoritos</h2>
+         </div>    
+        <div class="row g-3">
+                <!-- SHOPPING -->
+                            <div class="col-md-4">
+                                <div class="card shadow-sm h-60" style="border-radius: 12px; overflow: hidden; cursor: pointer; position: relative;">
+                                        <img src="./imagem/shop.jpg" class="card-img-top" style="height: 220px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Shopping Central</h4>
+                                        <p class="text-muted">Av. Principal, 123</p>
+                                        <div>
+                                            <span class="badge bg-success">Rampa</span>
+                                            <span class="badge bg-info">Banheiro Adaptado</span>
+                                            <span class="badge bg-warning text-dark">Elevador</span>
+                                            <span class="badge bg-dark">Vaga PCD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                
+          
 
-       <a class="btn btn-danger btn-lg mt-2"><i class="bi bi-trash"></i> Excluir Lugar</a>
-
-    </div>
-
-    <div class="row g-4">
-
-        <!-- SHOPPING -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/shop.jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Shopping Central</h4>
-                    <p class="text-muted">Av. Principal, 123</p>
-                    <div>
-                        <span class="badge bg-success">Rampa</span>
-                        <span class="badge bg-info">Banheiro Adaptado</span>
-                        <span class="badge bg-warning text-dark">Elevador</span>
-                        <span class="badge bg-dark">Vaga PCD</span>
+            <!-- BIBLIOTECA -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-60">
+                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=60"
+                            class="card-img-top" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">Biblioteca Municipal</h4>
+                            <p class="text-muted">Rua dos Estudantes, 450</p>
+                            <div>
+                                <span class="badge bg-success">Rampa</span>
+                                <span class="badge bg-primary">Piso Tátil</span>
+                                <span class="badge bg-info">Banheiro Adaptado</span>
+                            </div>
+                            
+                        </div>
                     </div>
+                </div>
+
+                <!-- CENTRO CULTURAL -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-60">
+                        <img src="./imagem/Cent.cult..jpg"
+                            class="card-img-top" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">Centro Cultural</h4>
+                            <p class="text-muted">Praça Central, 22</p>
+                            <div>
+                                <span class="badge bg-info">Banheiro Adaptado</span>
+                                <span class="badge bg-dark">Vaga PCD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESTAURANTE -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-60">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=60"
+                            class="card-img-top" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">Restaurante Sabor & Arte</h4>
+                            <p class="text-muted">Av. Gourmet, 900</p>
+                            <div>
+                                <span class="badge bg-success">Rampa</span>
+                                <span class="badge bg-info">Banheiro Adaptado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PARQUE -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-60">
+                        <img src="./imagem/download.jpg"
+                            class="card-img-top" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">Parque das Flores</h4>
+                            <p class="text-muted">Av. Verde, 77</p>
+                            <div>
+                                <span class="badge bg-success">Acesso Nivelado</span>
+                                <span class="badge bg-primary">Piso Tátil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOSPITAL -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-70">
+                        <img src="./imagem/Hospital.webp"
+                            class="card-img-top" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">Hospital Vida</h4>
+                            <p class="text-muted">Rua Saúde, 1000</p>
+                            <div>
+                                <span class="badge bg-success">Rampa</span>
+                                <span class="badge bg-warning text-dark">Elevador</span>
+                                <span class="badge bg-info">Banheiro Adaptado</span>
+                                <span class="badge bg-dark">Vaga PCD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <!-- Mapa (integração com o Google Maps) -->
+            <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+                <div class="text-center">
+                    <div style="font-size: 48px; margin-bottom: 10px;">🗺️</div>
+                    <p>Você está aqui📍</p>
+                    <small>Coordenadas: -23.5505, -46.6333</small>
                 </div>
             </div>
         </div>
 
-        <!-- BIBLIOTECA -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=60"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Biblioteca Municipal</h4>
-                    <p class="text-muted">Rua dos Estudantes, 450</p>
-                    <div>
-                        <span class="badge bg-success">Rampa</span>
-                        <span class="badge bg-primary">Piso Tátil</span>
-                        <span class="badge bg-info">Banheiro Adaptado</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- CENTRO CULTURAL -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/Cent.cult..jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Centro Cultural</h4>
-                    <p class="text-muted">Praça Central, 22</p>
-                    <div>
-                        <span class="badge bg-info">Banheiro Adaptado</span>
-                        <span class="badge bg-dark">Vaga PCD</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- RESTAURANTE -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=60"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Restaurante Sabor & Arte</h4>
-                    <p class="text-muted">Av. Gourmet, 900</p>
-                    <div>
-                        <span class="badge bg-success">Rampa</span>
-                        <span class="badge bg-info">Banheiro Adaptado</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PARQUE -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/download.jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Parque das Flores</h4>
-                    <p class="text-muted">Av. Verde, 77</p>
-                    <div>
-                        <span class="badge bg-success">Acesso Nivelado</span>
-                        <span class="badge bg-primary">Piso Tátil</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HOSPITAL -->
-        <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/Hospital.webp"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
-                <div class="card-body">
-                    <h4 class="card-title">Hospital Vida</h4>
-                    <p class="text-muted">Rua Saúde, 1000</p>
-                    <div>
-                        <span class="badge bg-success">Rampa</span>
-                        <span class="badge bg-warning text-dark">Elevador</span>
-                        <span class="badge bg-info">Banheiro Adaptado</span>
-                        <span class="badge bg-dark">Vaga PCD</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+   
 </div>
+        
