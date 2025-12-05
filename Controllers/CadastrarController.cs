@@ -36,11 +36,6 @@ namespace RecentMemory.Controllers
                 return View("Login");
             }
 
-            HttpContext.Session.SetString("Usuario", Usuario.Email);
-            HttpContext.Session.SetString("NomeUsuario", usuario.Nome);
-
-            return RedirectToAction("Index", "Home");
-
             
         }
     }
