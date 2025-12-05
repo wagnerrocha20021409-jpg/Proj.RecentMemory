@@ -1,26 +1,202 @@
-@page
+@{
+    ViewBag.Title = "Lembretes";
+}
 
-<div>
-    <h1>Lembretes</h1>
+<div class="container mt-4">
 
-     
-        <div class="col-md-4 mb-3">
-            <a href="/lembretes" class="card border-0 shadow-sm text-decoration-none" style="transition: transform 0.2s, box-shadow 0.2s;">
+    <!-- TÍTULO -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">
+            <i class="bi bi-bell-fill"></i> Lembretes
+        </h2>
+
+        <a class="btn btn-lg btn-primary" href="/Lembretes/Create">
+            <i class="bi bi-plus-circle"></i> Criar Novo Lembrete
+        </a>
+    </div>
+
+    <!-- MENSAGEM DE INTRODUÇÃO -->
+    <div class="alert alert-primary p-4 fs-5 shadow-sm">
+        <strong>Bem-vindo(a)!</strong><br>
+        Aqui você pode ver seus lembretes importantes para o dia a dia.  
+        Este sistema foi feito para ajudar pessoas como você a não esquecer tarefas importantes.
+    </div>
+
+    <!-- CARDS DE DESTAQUE -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
                 <div class="card-body">
-                    <div class="d-flex align-items-center gap-3">
-                        <div style="width: 50px; height: 50px; background: #e0f2fe; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2">
-                                <path d="M9 11l3 3L22 4"></path>
-                                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h6 class="mb-0" style="color: #1f2937;">Lembretes</h6>
-                            <small class="text-muted">@ViewBag.TotalLembretes @(ViewBag.TotalLembretes != 1 ? "itens" : "item")</small>
-                        </div>
-                    </div>
+                    <h5 class="card-title"><i class="bi bi-calendar-event"></i> Próxima Tarefa</h5>
+                    <p class="card-text">Tomar remédio às 10h.</p>
+                    <span class="badge bg-warning text-dark">Hoje</span>
                 </div>
-            </a>
+            </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-check2-circle"></i> Tarefas Concluídas</h5>
+                    <p class="card-text">2 lembretes concluídos nesta semana.</p>
+                    <span class="badge bg-success">Bom trabalho!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-exclamation-circle"></i> Importante</h5>
+                    <p class="card-text">Consulta médica amanhã às 14h.</p>
+                    <span class="badge bg-danger">Atenção!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- CARD DE DESTAQUE -->
+    <div class="card mb-3 shadow-sm border-0">
+        <div class="card-body">
+            <h5 class="card-title">
+                <i class="bi bi-bell"></i> Tomar remédio
+            </h5>
+            <p class="card-text">Medicamento às 10h</p>
+            <span class="badge bg-warning text-dark">Alta prioridade</span>
+        </div>
+    </div>
+
+    <!-- TABELA DE LEMBRETES -->
+    <h4 class="fw-bold mt-4 mb-3">Lista de Lembretes</h4>
+
+    <table class="table table-hover table-bordered shadow-sm bg-white">
+        <thead class="table-primary">
+            <tr>
+                <th class="text-center">Título</th>
+                <th class="text-center">Descrição</th>
+                <th class="text-center">Data</th>
+                <th class="text-center">Prioridade</th>
+                <th class="text-center">Concluído</th>
+                <th class="text-center" style="width: 200px;">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- Linha 1 -->
+            <tr>
+                <td>Lembrar de tomar remédio</td>
+                <td>Medicamento às 10h</td>
+                <td class="text-center">05/03/2025</td>
+                <td class="text-center"><span class="badge bg-danger">Alta</span></td>
+                <td class="text-center"><span class="badge bg-secondary">Não</span></td>
+
+              <td class="text-center">
+    <div class="d-flex flex-column gap-2">
+        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
+            <i class="bi bi-eye"></i> Detalhes
+        </a>
+        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
+            <i class="bi bi-pencil"></i> Editar
+        </a>
+        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
+            <i class="bi bi-trash"></i> Excluir
+        </a>
+    </div>
+</td>
+
+            </tr>
+
+            <!-- Linha 2 -->
+            <tr>
+                <td>Comprar frutas</td>
+                <td>Ir ao mercado</td>
+                <td class="text-center">06/03/2025</td>
+                <td class="text-center"><span class="badge bg-primary">Média</span></td>
+                <td class="text-center"><span class="badge bg-success">Sim</span></td>
+
+  <td class="text-center">
+    <div class="d-flex flex-column gap-2">
+        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
+            <i class="bi bi-eye"></i> Detalhes
+        </a>
+        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
+            <i class="bi bi-pencil"></i> Editar
+        </a>
+        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
+            <i class="bi bi-trash"></i> Excluir
+        </a>
+    </div>
+</td>
+
+            </tr>
+
+            <!-- Linha 3 -->
+            <tr>
+   <td>
+    <strong>Pagar a conta de luz</strong><br>
+    <small class="text-muted"><i class="bi bi-info-circle"></i> Conta de energia mensal</small>
+</td>
+
+<td>
+    <i class="bi bi-calendar-event text-primary"></i>
+    Vence dia <strong>10</strong>
+</td>
+
+<td class="text-center">
+    <span class="badge bg-light text-dark border">
+        <i class="bi bi-clock"></i> 10/03/2025
+    </span>
+</td>
+
+<td class="text-center">
+    <span class="badge bg-warning text-dark">
+        <i class="bi bi-flag"></i> Baixa prioridade
+    </span>
+</td>
+
+<td class="text-center">
+    <span class="badge bg-secondary">
+        <i class="bi bi-x-circle"></i> Não concluído
+    </span>
+</td>
+
+
+      <td class="text-center">
+    <div class="d-flex flex-column gap-2">
+        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
+            <i class="bi bi-eye"></i> Detalhes
+        </a>
+        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
+            <i class="bi bi-pencil"></i> Editar
+        </a>
+        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
+            <i class="bi bi-trash"></i> Excluir
+        </a>
+    </div>
+</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- ÁREA DE DICAS -->
+   
+
+    <footer class="text-center mt-5 mb-3">
+    <div class="container">
+        <div class="alert alert-light border rounded p-3 mx-auto" style="max-width: 9900px;">
+            <strong>💡 Dicas para organizar seus lembretes</strong>
+            <ul class="mb-0 mt-2 text-start">
+                <li>Use lembretes curtos e fáceis de entender.</li>
+                <li>Marque como concluído quando terminar uma tarefa.</li>
+                <li>Evite acumular muitos lembretes antigos.</li>
+                <li>Use cores e prioridades para lembrar o que é mais importante.</li>
+            </ul>
+        </div>
+        <small class="text-muted">© 2025 - RecentMemory - <a href="#">Privacy</a></small>
+    </div>
+</footer>
+
 
 </div>

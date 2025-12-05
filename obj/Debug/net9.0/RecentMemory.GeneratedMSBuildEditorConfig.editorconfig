@@ -44,8 +44,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[C:/Users/wagner.roliveira6/OneDrive - SENAC - SP/Área de Trabalho/RecentMemory/RecentMemory/Views/Lembretes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVtYnJldGVzXEluZGV4LmNzaHRtbA==
+=======
 [C:/Users/priscila.lsjoao/Desktop/BackEnd/Proj.RecentMemory/Views/Lembretes/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVtYnJldGVzXGluZGV4LmNzaHRtbA==
+>>>>>>> cab2c9348bbf5ad3efffe6de76dd56bc09f4085d
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/priscila.lsjoao/Desktop/BackEnd/Proj.RecentMemory/Views/Login/Index.cshtml]
