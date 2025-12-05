@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var username = Context.Session.GetString("NomeUsuario");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -41,15 +45,20 @@
                     <div style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">
                         <img  style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%;" src="/imagem/39779.png" alt="Foto de perfil">
                     </div>
-                    <div "card-body"> 
-                            <div class="d-none d-md-block">
-                                 <!-- Login Button -->
-                                <a href="Login" class="btn btn-primary" style="background: #0ea5e9; border: none; padding: 8px 18px; border-radius: 6px; color: white; font-weight: 500; text-decoration: none; transition: background 0.2s;">
-                                    Entrar
-                                </a>
+                    <p>@username</p>
 
-                            </div>
-                    </div>
+                    @if(string.IsNullOrEmpty(username))
+                    {
+                        <div "card-body"> 
+                                <div class="d-none d-md-block">
+                                    <!-- Login Button -->
+                                    <a href="Login" class="btn btn-primary" style="background: #0ea5e9; border: none; padding: 8px 18px; border-radius: 6px; color: white; font-weight: 500; text-decoration: none; transition: background 0.2s;">
+                                        Entrar
+                                    </a>
+
+                                </div>
+                        </div>
+                    }
                 </div>
          </nav>
 </header>

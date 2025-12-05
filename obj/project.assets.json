@@ -4708,23 +4708,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\wagner.roliveira6\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\priscila.lsjoao\\.nuget\\packages\\": {},
+>>>>>>> cab2c9348bbf5ad3efffe6de76dd56bc09f4085d
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj",
       "projectName": "RecentMemory",
       "projectPath": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\RecentMemory.csproj",
       "packagesPath": "C:\\Users\\wagner.roliveira6\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj",
+      "projectName": "RecentMemory",
+      "projectPath": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\RecentMemory.csproj",
+      "packagesPath": "C:\\Users\\priscila.lsjoao\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\obj\\",
+>>>>>>> cab2c9348bbf5ad3efffe6de76dd56bc09f4085d
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\wagner.roliveira6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\priscila.lsjoao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> cab2c9348bbf5ad3efffe6de76dd56bc09f4085d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

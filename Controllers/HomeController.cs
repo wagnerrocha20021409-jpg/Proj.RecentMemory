@@ -4,6 +4,7 @@ using RecentMemory.Models;
 
 namespace RecentMemory.Controllers;
 
+[Route("[controller]")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
