@@ -10,6 +10,7 @@ namespace RecentMemory.Controllers
     public class LoginController : Controller
     {
          RecentMemoryContext context = new RecentMemoryContext();
+        private string Nome;
 
         public IActionResult Index()
         {
@@ -33,7 +34,6 @@ namespace RecentMemory.Controllers
             // Se não encontrou ou senha inválida (exemplo simples, sem hash)
             if (usuario == null || usuario.Senha != password)
             {
-
                 ViewBag.Erro = "Email ou senha inválidos.";
 
                 return View("Index");

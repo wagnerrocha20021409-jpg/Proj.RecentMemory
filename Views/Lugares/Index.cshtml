@@ -1,26 +1,29 @@
 @{
-    ViewBag.Title = "Lugares";
+    ViewData["Title"] = "Lugares";
 }
 
-<div class="container mt-5">
-
+<div class="container mt-4 mb-5">
+    <!--  Adicionar -->
     <div class="text-center mb-4">
         <h1 class="fw-bold">Cada destino, uma lembrança.</h1>
         <p class="text-muted">Porque alguns lugares merecem ser lembrados.</p>
 
-       <button class="btn btn-primary btn-lg mt-2">+ Adicionar Lugar</button>
-
-       <a class="btn btn-danger btn-lg mt-2"><i class="bi bi-trash"></i> Excluir Lugar</a>
-
+        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novoLugarModal"
+            style="background-color: #0ea5e9; border: none; padding: 12px 30px; border-radius: 8px;">
+            📍 Adicionar lugar
+        </button>
     </div>
 
-    <div class="row g-4">
-
+    <!-- Seus Favoritos -->
+    <div class="mb-3">
+        <h2 class="mb-3+" style="font-weight: 600; font-size: 20px;">Seus Favoritos</h2>
+    </div>
+    <div class="row g-3">
         <!-- SHOPPING -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/shop.jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="card shadow-sm h-60"
+                style="border-radius: 12px; overflow: hidden; cursor: pointer; position: relative;">
+                <img src="./imagem/shop.jpg" class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Shopping Central</h4>
                     <p class="text-muted">Av. Principal, 123</p>
@@ -34,11 +37,13 @@
             </div>
         </div>
 
+
+
         <!-- BIBLIOTECA -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
+            <div class="card shadow-sm h-60">
                 <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=60"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                    class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Biblioteca Municipal</h4>
                     <p class="text-muted">Rua dos Estudantes, 450</p>
@@ -47,16 +52,15 @@
                         <span class="badge bg-primary">Piso Tátil</span>
                         <span class="badge bg-info">Banheiro Adaptado</span>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
         <!-- CENTRO CULTURAL -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/Cent.cult..jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="card shadow-sm h-60">
+                <img src="./imagem/Cent.cult..jpg" class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Centro Cultural</h4>
                     <p class="text-muted">Praça Central, 22</p>
@@ -70,9 +74,9 @@
 
         <!-- RESTAURANTE -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
+            <div class="card shadow-sm h-60">
                 <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=60"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                    class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Restaurante Sabor & Arte</h4>
                     <p class="text-muted">Av. Gourmet, 900</p>
@@ -86,9 +90,8 @@
 
         <!-- PARQUE -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/download.jpg"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="card shadow-sm h-60">
+                <img src="./imagem/download.jpg" class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Parque das Flores</h4>
                     <p class="text-muted">Av. Verde, 77</p>
@@ -102,9 +105,8 @@
 
         <!-- HOSPITAL -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <img src="./imagem/Hospital.webp"
-                     class="card-img-top" style="height: 220px; object-fit: cover;">
+            <div class="card shadow-sm h-70">
+                <img src="./imagem/Hospital.webp" class="card-img-top" style="height: 220px; object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title">Hospital Vida</h4>
                     <p class="text-muted">Rua Saúde, 1000</p>
@@ -117,7 +119,61 @@
                 </div>
             </div>
         </div>
-
     </div>
 
+    <!-- Modal Novo Lugar -->
+    <div class="modal fade" id="novoLugarModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Novo Lugar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <form method="post" class="modal-body" action="/lugares/criar">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="Endereço" name="Endereço" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select class="form-select" id="categoria" name="categoria" required>
+                                <option value="Restaurante">Restaurante</option>
+                                <option value="Turismo">Turismo</option>
+                                <option value="Compras">Compras</option>
+                                <option value="Lazer">Lazer</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Criar Lugar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mapa (integração com o Google Maps) -->
+    <div class="mt-5" style="width: 100%; height: 300px; background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #6b7280;margin-bottom:100px">
+        <div class="text-center">
+            @* <div style="font-size: 48px; margin-bottom: 10px;">🗺️</div>
+            <p>Você está aqui📍</p>
+            <small>Coordenadas: -23.5505, -46.6333</small> *@
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.794287168224!2d-46.45911812385333!3d-23.539900178814623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1764978942618!5m2!1spt-BR!2sbr" width="1270" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 </div>

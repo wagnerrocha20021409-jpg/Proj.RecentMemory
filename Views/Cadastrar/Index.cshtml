@@ -5,7 +5,7 @@
 
 <div class="w-100 row d-flex justify-content-between align-items-center" style="height:100vh;">
     <!-- Seção do formulário -->
-    <div class="col form-section d-flex flex-column align-items-center justify-content-center p-5 bg-white" style="height:100vh;" >
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-5 bg-white" style="height:100vh;" >
         <h1 class="mb-4">Criar uma conta</h1>
 
         @if (!string.IsNullOrEmpty(ViewBag.Erro))
@@ -18,34 +18,30 @@
             <form method="POST" class="w-75 text-start" asp-controller="Cadastrar" asp-action="Cadastrar">
                 @Html.AntiForgeryToken()
 
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="nomeCompleto">Nome Completo</label>
-                    <input type="text" id="nomeCompleto" name="nome" placeholder="Seu nome completo" required />
+                    <input type="text" id="nomeCompleto" name="nome" class="form-control form-control-lg"  placeholder="Seu nome completo" required />
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required />
+                    <input type="email" id="email" name="email" class="form-control form-control-lg"  placeholder="seu.email@exemplo.com" required />
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="password" placeholder="Mínimo de 8 caracteres" required minlength="8" />
+                    <input type="password" id="senha" name="password" class="form-control form-control-lg" placeholder="Mínimo de 8 caracteres" required minlength="8" />
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="confirmaSenha">Confirmar Senha</label>
-                    <input type="password" id="confirmaSenha" name="confirmPassword" placeholder="Digite sua senha novamente" required minlength="8" />
+                    <input type="password" id="confirmaSenha" name="confirmPassword"  class="form-control form-control-lg" placeholder="Digite sua senha novamente" required minlength="8" />
                 </div>
 
-                <button type="submit" class="submit-btn">Cadastra - se</button>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Cadastrar - se</button>
             </form>
         @* } *@
 
-
-        @*<div class="mt-3">
-                <a></a>Não tem conta? <Url.Action(Cadastre-se) /a>
-            </div> *@
         </div>
 
         <div class="col p-0 d-flex"  style="height:100vh;">

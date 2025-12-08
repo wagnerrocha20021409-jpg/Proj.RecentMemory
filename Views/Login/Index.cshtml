@@ -5,7 +5,7 @@
 
 <div class="w-100 row d-flex justify-content-between align-items-center" style="height:100vh;">
     <!-- Seção do formulário -->
-    <div class="col form-section d-flex flex-column align-items-center justify-content-center p-5 bg-white" style="height:100vh;" >
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-7 bg-white order-2 order-md-1" >
         <h1 class="mb-4">Entrar na conta</h1>
 
         @if (!string.IsNullOrEmpty(ViewBag.Erro))
@@ -18,42 +18,31 @@
             <form method="POST" class="w-75 text-start" asp-controller="Login" asp-action="Login">
                 @Html.AntiForgeryToken()
 
-                @* <div class="mb-3">
-                    <input type="name" name="name" class="form-control form-control-lg" placeholder="Nome"
-                        required />
-                </div> *@
-
                 <div class="mb-3">
-                    <input type="email" name="email" class="form-control form-control-lg" placeholder="example.email@gmail.com"
-                        required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control form-control-lg"  placeholder="seu.email@exemplo.com" required />
                 </div>
 
                 <div class="mb-3">
-                    <input type="password" name="password" class="form-control form-control-lg" placeholder="Sua senha"
-                        required />
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="password" class="form-control form-control-lg" placeholder="Sua senha" required />
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-lg w-100">Entrar</button>
-            </form>
-        @* } *@
 
-           
-        <div class="login-link">
-                    Não tem uma Conta? <a href="@Url.Action("Cadastrar", "Cadastrar")">Cadastrar - se</a>
+                <div class="login-link">
+                        Não tem uma Conta? <a href="@Url.Action("Cadastrar", "Cadastrar")">Cadastrar - se</a>
                 </div>
-            </div>
+
+            </form>
+              @* } *@
         </div>
 
-        <div class="col p-0 d-flex"  style="height:100vh;">
-            <img src="/imagem/Selection.png" alt="imagem Tela de Login" class="img-fluid w-100 object-fit-cover ">
-        </div>
+                 <!-- Seção da imagem -->
 
-        <!-- Seção da imagem -->
-        @* <div class="col image-section d-flex align-items-center justify-content-center"
-                style="flex:-1; background: linear-gradient(135deg,#7c3aed,#3b82f6);">
-                <img src="/imagem/Selection.png" alt="imagem Tela de Login" class="img-fluid">
-            </div> 
-        *@
+                <div class="col p-0 d-flex"  style="height:100vh;">
+                    <img src="/imagem/Selection.png" alt="imagem Tela de Login" class="img-fluid w-100 object-fit-cover ">
+                </div>
 
 </div>
 
