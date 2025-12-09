@@ -1,0 +1,21 @@
+
+@{
+    ViewData["Title"] = "Configurações";
+}
+
+<h2>Configurações da Conta</h2>
+<p>Aqui você pode alterar seu nome, e-mail, senha e preferências.</p>
+
+<div class="row">
+    <div class="col-md-6">
+       <form>
+            @Html.AntiForgeryToken()
+            <!-- seus campos -->
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input name="Nome" class="form-control" value="@User?.Identity?.Name" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>

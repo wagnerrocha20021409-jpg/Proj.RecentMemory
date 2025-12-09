@@ -4,19 +4,20 @@
 
 <div class="container mt-4">
 
-        <!-- Botão Adicionar Lembrete -->
-            <div style="d-flex justify-content-between align-items-center mb-4; margin-bottom: 30px;">
-                <h2 class="fw-bold">
-                     <i class="bi bi-bell-fill"></i> Lembretes
-                </h2>
-                <a>
-                    <button class="btn btn-lg btn-primary justify-content-center" data-bs-toggle="modal" data-bs-target="#novoLembreteModal">
-                    <i class="bi bi-plus-circle"></i> Criar Novo Lembrete
-                    </button>
-                </a>
-            </div>
+    <!-- Botão Adicionar Lembrete -->
+    <div style="d-flex justify-content-between align-items-center mb-4; margin-bottom: 30px;">
+        <h2 class="fw-bold">
+            <i class="bi bi-bell-fill"></i> Lembretes
+        </h2>
+        <a>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novoLembreteModal"
+                style="background-color: #0ea5e9; border: none; padding: 12px 30px; border-radius: 8px;">
+                <i class="bi bi-plus-circle"></i> Criar Novo Lembrete
+            </button>
+        </a>
+    </div>
 
-        @*<!-- TÍTULO -->
+    @*<!-- TÍTULO -->
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2 class="fw-bold">
                 <i class="bi bi-bell-fill"></i> Lembretes
@@ -27,89 +28,92 @@
             </a>
         </div>@**@
 
-        <!-- MENSAGEM DE INTRODUÇÃO -->
-        <div class="alert alert-primary p-4 fs-5 shadow-sm">
-            <strong>Bem-vindo(a)!</strong><br>
-            Aqui você pode ver seus lembretes importantes para o dia a dia.  
-            Este sistema foi feito para ajudar pessoas como você a não esquecer tarefas importantes.
-        </div>
+    <!-- MENSAGEM DE INTRODUÇÃO -->
+    <div class="alert alert-primary p-4 fs-5 shadow-sm">
+        <strong>Bem-vindo(a)!</strong><br>
+        Aqui você pode ver seus lembretes importantes para o dia a dia.
+        Este sistema foi feito para ajudar pessoas como você a não esquecer tarefas importantes.
+    </div>
 
-        <!-- CARDS DE DESTAQUE -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-calendar-event"></i> Próxima Tarefa</h5>
-                        <p class="card-text">Tomar remédio às 10h.</p>
-                        <span class="badge bg-warning text-dark">Hoje</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-check2-circle"></i> Tarefas Concluídas</h5>
-                        <p class="card-text">2 lembretes concluídos nesta semana.</p>
-                        <span class="badge bg-success">Bom trabalho!</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-exclamation-circle"></i> Importante</h5>
-                        <p class="card-text">Consulta médica amanhã às 14h.</p>
-                        <span class="badge bg-danger">Atenção!</span>
-                    </div>
+    <!-- CARDS DE DESTAQUE -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-1">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-calendar-event"></i> Próxima Tarefa</h5>
+                    <p class="card-text">Tomar remédio às 10h.</p>
+                    <span class="badge bg-warning text-dark">Hoje</span>
                 </div>
             </div>
         </div>
-        <!-- CARD DE DESTAQUE -->
-        <div class="card mb-3 shadow-sm border-0">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <i class="bi bi-bell"></i> Tomar remédio
-                </h5>
-                <p class="card-text">Medicamento às 10h</p>
-                <span class="badge bg-warning text-dark">Alta prioridade</span>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-1">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-check2-circle"></i> Tarefas Concluídas</h5>
+                    <p class="card-text">2 lembretes concluídos nesta semana.</p>
+                    <span class="badge bg-success">Bom trabalho!</span>
+                </div>
             </div>
         </div>
 
-        <!-- TABELA DE LEMBRETES -->
-        <h4 class="fw-bold mt-4 mb-3">Lista de Lembretes</h4>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-1">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-exclamation-circle"></i> Importante</h5>
+                    <p class="card-text">Consulta médica amanhã às 14h.</p>
+                    <span class="badge bg-danger">Atenção!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARD DE DESTAQUE -->
+    <div class="card mb-3 shadow-sm border-1">
+        <div class="card-body">
+            <h5 class="card-title">
+                <i class="bi bi-bell"></i> Tomar remédio
+            </h5>
+            <p class="card-text">Medicamento às 10h</p>
+            <span class="badge bg-warning text-dark">Alta prioridade</span>
+        </div>
+    </div>
+
+    <!-- TABELA DE LEMBRETES -->
+    <h4 class="fw-bold mt-4 mb-3">Lista de Lembretes</h4>
 
     <table class="table table-hover table-bordered shadow-sm bg-white">
-            <thead class="table-primary">
-                <tr>
-                    <th class="text-center">Título</th>
-                    <th class="text-center">Descrição</th>
-                    <th class="text-center">Data</th>
-                    <th class="text-center">Prioridade</th>
-                    <th class="text-center">Concluído</th>
-                    <th class="text-center" style="width: 200px;">Ações</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <!-- Linha 1 -->
+        <thead class="table-primary">
             <tr>
-                    <td>Lembrar de tomar remédio</td>
-                    <td>Medicamento às 10h</td>
-                    <td class="text-center">05/03/2025</td>
-                    <td class="text-center"><span class="badge bg-danger">Alta</span></td>
-                    <td class="text-center"><span class="badge bg-secondary">Não</span></td>
+                <th class="text-center">Título</th>
+                <th class="text-center">Descrição</th>
+                <th class="text-center">Data</th>
+                <th class="text-center">Prioridade</th>
+                <th class="text-center">Concluído</th>
+                <th class="text-center" style="width: 200px;">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Linha 1 -->
+            <tr>
+                <td>Lembrar de tomar remédio</td>
+                <td>Medicamento às 10h</td>
+                <td class="text-center">05/03/2025</td>
+                <td class="text-center"><span class="badge bg-danger">Alta</span></td>
+                <td class="text-center"><span class="badge bg-secondary">Não</span></td>
 
                 <td class="text-center">
                     <div class="d-flex flex-column gap-2">
-                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
+                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Ver detalhes do lembrete">
                             <i class="bi bi-eye"></i> Detalhes
                         </a>
-                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
+                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Editar este lembrete">
                             <i class="bi bi-pencil"></i> Editar
                         </a>
-                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
+                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Excluir este lembrete">
                             <i class="bi bi-trash"></i> Excluir
                         </a>
                     </div>
@@ -118,29 +122,32 @@
             </tr>
 
             <!-- Linha 2 -->
-                <tr>
-                    <td>Comprar frutas</td>
-                    <td>Ir ao mercado</td>
-                    <td class="text-center">06/03/2025</td>
-                    <td class="text-center"><span class="badge bg-primary">Média</span></td>
-                    <td class="text-center"><span class="badge bg-success">Sim</span></td>
+            <tr>
+                <td>Comprar frutas</td>
+                <td>Ir ao mercado</td>
+                <td class="text-center">06/03/2025</td>
+                <td class="text-center"><span class="badge bg-primary">Média</span></td>
+                <td class="text-center"><span class="badge bg-success">Sim</span></td>
 
-                    <td class="text-center">
-                        <div class="d-flex flex-column gap-2">
-                                <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
-                                    <i class="bi bi-eye"></i> Detalhes
-                                </a>
-                                <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
-                                    <i class="bi bi-pencil"></i> Editar
-                                </a>
-                                <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
-                                    <i class="bi bi-trash"></i> Excluir
-                                </a>
-                        </div>
-                    </td>
-                </tr>
+                <td class="text-center">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Ver detalhes do lembrete">
+                            <i class="bi bi-eye"></i> Detalhes
+                        </a>
+                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Editar este lembrete">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Excluir este lembrete">
+                            <i class="bi bi-trash"></i> Excluir
+                        </a>
+                    </div>
+                </td>
+            </tr>
 
-                <!-- Linha 3 -->
+            <!-- Linha 3 -->
             <tr>
                 <td>
                     <strong>Pagar a conta de luz</strong><br>
@@ -172,93 +179,108 @@
 
 
                 <td class="text-center">
-                        <div class="d-flex flex-column gap-2">
-                            <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver detalhes do lembrete">
-                                <i class="bi bi-eye"></i> Detalhes
-                            </a>
-                            <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar este lembrete">
-                                <i class="bi bi-pencil"></i> Editar
-                            </a>
-                            <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Excluir este lembrete">
-                                <i class="bi bi-trash"></i> Excluir
-                            </a>
-                        </div>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Ver detalhes do lembrete">
+                            <i class="bi bi-eye"></i> Detalhes
+                        </a>
+                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Editar este lembrete">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Excluir este lembrete">
+                            <i class="bi bi-trash"></i> Excluir
+                        </a>
+                    </div>
                 </td>
             </tr>
-     </tbody>
-</table>
+        </tbody>
+    </table>
 
-<!-- Modal Novo Lugar -->
+    <!-- Modal Novo Lugar -->
     <div class="modal fade" id="novoLembreteModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title bi bi-plus-circle">Criar Novo Lembrete</h5>
-                        <a class="btn btn-lg btn-primary" href="/Lembretes/Create">
-                        
-                        </a>
+                    <a class="btn btn-lg btn-primary" href="/Lembretes/Create">
+
+                    </a>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <form method="post" class="modal-body" action="/Lembrete/criar">
+                <form method="post" class="modal-body" asp-action="AdicionarLembrete" asp-controller="Lembretes">
                     <div class="modal-body">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Título</label>
-                            <input type="text" class="form-control" id="Título" name="Título" required>
+                            <input type="text" class="form-control" id="Título" name="Titulo" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="nome" class="form-label">Descrição</label>
-                            <input type="text" class="form-control" id="Descrição" name="Descrição" required >
+                            <input type="text" class="form-control" id="Descrição" name="Descricao" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="nome" class="form-label">Data</label>
-                            <input type="text" class="form-control" id="Data" name="Data" required placeholder="dd/mm/aaaa">
+                            <input type="date" class="form-control" id="Data" name="DataLembrete" required
+                                placeholder="dd/mm/aaaa">
                         </div>
-
-                         <div class="mb-3">
-                            <label for="Concluído" class="form-label">Prioridade</label>
-                            <select class="form-select" id="Concluído" name="Concluído" required>
-                                <option value="Sim">Alta</option>
-                                <option value="Não">Média</option>
-                                <option value="Não">Baixa</option>
-                            </select>
 
                         <div class="mb-3">
-                            <label for="Concluído" class="form-label">Concluído</label>
-                            <select class="form-select" id="Concluído" name="Concluído" required>
-                                <option value="Sim">Sim</option>
-                                <option value="Não">Não</option>
+                            <label for="Concluído" class="form-label">Prioridade</label>
+                            <select class="form-select" id="Concluído" name="Prioridade" required>
+                                <option value="3">Alta</option>
+                                <option value="2">Média</option>
+                                <option value="1">Baixa</option>
+                            </select>
+
+                            <div class="mb-3">
+                                <label for="Concluído" class="form-label">Concluído</label>
+                                <select class="form-select" id="Concluído" name="Status" required>
+                                    <option value="F">Sim</option>
+                                    <option value="P">Não</option>
+                                </select>
+                            </div>
+
+                            <select data-mdb-select-init multiple>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                                <option value="8">Eight</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Criar Lugar</button>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Criar Lembrete</button>
+                        </div>
                 </form>
             </div>
         </div>
     </div>
 
     <!-- ÁREA DE DICAS -->
-   
+
 
     <footer class="text-center mt-5 mb-3">
-    <div class="container">
-        <div class="alert alert-light border rounded p-3 mx-auto" style="max-width: 9900px;">
-            <strong>💡 Dicas para organizar seus lembretes</strong>
-            <ul class="mb-0 mt-2 text-start">
-                <li>Use lembretes curtos e fáceis de entender.</li>
-                <li>Marque como concluído quando terminar uma tarefa.</li>
-                <li>Evite acumular muitos lembretes antigos.</li>
-                <li>Use cores e prioridades para lembrar o que é mais importante.</li>
-            </ul>
+        <div class="container">
+            <div class="alert alert-light border rounded p-3 mx-auto" style="max-width: 9900px;">
+                <strong>💡 Dicas para organizar seus lembretes</strong>
+                <ul class="mb-0 mt-2 text-start">
+                    <li>Use lembretes curtos e fáceis de entender.</li>
+                    <li>Marque como concluído quando terminar uma tarefa.</li>
+                    <li>Evite acumular muitos lembretes antigos.</li>
+                    <li>Use cores e prioridades para lembrar o que é mais importante.</li>
+                </ul>
+            </div>
+            <small class="text-muted">© 2025 - RecentMemory - <a href="#">Privacy</a></small>
         </div>
-        <small class="text-muted">© 2025 - RecentMemory - <a href="#">Privacy</a></small>
-    </div>
-</footer>
+    </footer>
 
 
 </div>
