@@ -8,10 +8,18 @@ namespace RecentMemory.Controllers
     public class LembretesController : Controller
     {
         RecentMemoryContext context = new RecentMemoryContext();
-     
+
         public IActionResult Index()
         {
-            var listaLembretes = context.Lugares.ToList();
+            // Lista de lugares 
+            var listaLugares = context.Lugares.ToList();
+            ViewBag.ListaLugares = listaLugares;
+
+            // Lista de contatos
+            var listaContatos = context.Contatos.ToList();
+            ViewBag.ListaContatos = listaContatos;
+
+            var listaLembretes = context.Lembretes.ToList();
 
             ViewBag.listaLembretes = listaLembretes;
 
@@ -19,27 +27,59 @@ namespace RecentMemory.Controllers
         }
 
 
-         [Route("AdicionarLembrete/{idLembrete}")]
-        public IActionResult Adicionar(int idLembrete)
-        {
-            Lembrete lembrete  = context.Lembretes.FirstOrDefault(x => x.Id == idLembrete);
+        // [Route("AdicionarLembrete/{idLembrete}")]
+        // public IActionResult Adicionar(int idLembrete)
+        // {
+        //     Lembrete lembrete  = context.Lembretes.FirstOrDefault(x => x.Id == idLembrete);
 
-            ViewBag.Lembrete = lembrete;
+        //     ViewBag.Lembrete = lembrete;
 
-            return View();
-        }
-        [Route("AdicionarLembrete")]
-        public IActionResult AdicionarLembrete(Lembrete Lembrete)
+        //     return View();
+        // }
+
+        [HttpPost]
+        public IActionResult AdicionarLembrete(Lembrete Lembrete, string[] contatos, string[] lugares)
         {
             // Procurando os dados do usuario
             var usuario = context.Usuarios.FirstOrDefault(x => x.Email == HttpContext.Session.GetString("Usuario"));
+
             Lembrete.UsuarioId = usuario.Id;
 
+            // Inserindo Lembrete
             context.Add(Lembrete);
 
             context.SaveChanges();
 
-            return RedirectToAction("Index");
+            // Vinculo com contatos
+            if (contatos != null)
+            {
+                foreach (var ct in contatos)
+                {
+                    context.ContatosLembretes.Add(new ContatoLembrete
+                    {
+                        LembretesId = Lembrete.Id,
+                        ContatosId = int.Parse(ct)
+                    });
+                }
+            }
+
+            // Vinculo com lugares
+            if (lugares != null)
+            {
+                foreach (var lg in lugares)
+                {
+                    context.LugaresLembretes.Add(new LugaresLembrete
+                    {
+                        LembretesId = Lembrete.Id,
+                        LugaresId = int.Parse(lg)
+                    });
+                }
+            }
+
+            // Salva tudo de uma vez
+            context.SaveChanges();
+
+             return RedirectToAction("Index");
         }
     }
-}
+} 

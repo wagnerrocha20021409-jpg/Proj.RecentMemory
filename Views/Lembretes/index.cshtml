@@ -77,7 +77,6 @@
             <span class="badge bg-warning text-dark">Alta prioridade</span>
         </div>
     </div>
-
     <!-- TABELA DE LEMBRETES -->
     <h4 class="fw-bold mt-4 mb-3">Lista de Lembretes</h4>
 
@@ -94,107 +93,48 @@
         </thead>
 
         <tbody>
-            <!-- Linha 1 -->
-            <tr>
-                <td>Lembrar de tomar remédio</td>
-                <td>Medicamento às 10h</td>
-                <td class="text-center">05/03/2025</td>
-                <td class="text-center"><span class="badge bg-danger">Alta</span></td>
-                <td class="text-center"><span class="badge bg-secondary">Não</span></td>
 
-                <td class="text-center">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Ver detalhes do lembrete">
-                            <i class="bi bi-eye"></i> Detalhes
-                        </a>
-                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Editar este lembrete">
-                            <i class="bi bi-pencil"></i> Editar
-                        </a>
-                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Excluir este lembrete">
-                            <i class="bi bi-trash"></i> Excluir
-                        </a>
-                    </div>
-                </td>
+            @if(ViewBag.ListaLembretes != null && ViewBag.ListaLembretes.Count > 0)
+            {
+                @foreach(Lembrete lembrete in ViewBag.ListaLembretes)
+                {
+                    <tr>
+                        <td>@lembrete.Titulo</td>
+                        <td>@lembrete.Descricao</td>
+                        <td class="text-center">@lembrete.DataLembrete</td>
 
-            </tr>
+                        @if(lembrete.Prioridade == 3)
+                        {
+                            <td class="text-center"><span class="badge bg-danger">Alta</span></td>
+                        }else if(lembrete.Prioridade == 2){
+                            <td class="text-center"><span class="badge bg-warning">Média</span></td>
+                        }else{
+                            <td class="text-center"><span class="badge bg-success">Baixa</span></td>
+                        }
 
-            <!-- Linha 2 -->
-            <tr>
-                <td>Comprar frutas</td>
-                <td>Ir ao mercado</td>
-                <td class="text-center">06/03/2025</td>
-                <td class="text-center"><span class="badge bg-primary">Média</span></td>
-                <td class="text-center"><span class="badge bg-success">Sim</span></td>
+                        <td class="text-center"><span class="badge bg-secondary">Média</span></td>
 
-                <td class="text-center">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Ver detalhes do lembrete">
-                            <i class="bi bi-eye"></i> Detalhes
-                        </a>
-                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Editar este lembrete">
-                            <i class="bi bi-pencil"></i> Editar
-                        </a>
-                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Excluir este lembrete">
-                            <i class="bi bi-trash"></i> Excluir
-                        </a>
-                    </div>
-                </td>
-            </tr>
-
+                        <td class="text-center">    
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Ver detalhes do lembrete">
+                                    <i class="bi bi-eye"></i> Detalhes
+                                </a>
+                                <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar este lembrete">
+                                    <i class="bi bi-pencil"></i> Editar
+                                </a>
+                                <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Excluir este lembrete">
+                                    <i class="bi bi-trash"></i> Excluir
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
             <!-- Linha 3 -->
-            <tr>
-                <td>
-                    <strong>Pagar a conta de luz</strong><br>
-                    <small class="text-muted"><i class="bi bi-info-circle"></i> Conta de energia mensal</small>
-                </td>
-
-                <td>
-                    <i class="bi bi-calendar-event text-primary"></i>
-                    Vence dia <strong>10</strong>
-                </td>
-
-                <td class="text-center">
-                    <span class="badge bg-light text-dark border">
-                        <i class="bi bi-clock"></i> 10/03/2025
-                    </span>
-                </td>
-
-                <td class="text-center">
-                    <span class="badge bg-warning text-dark">
-                        <i class="bi bi-flag"></i> Baixa prioridade
-                    </span>
-                </td>
-
-                <td class="text-center">
-                    <span class="badge bg-secondary">
-                        <i class="bi bi-x-circle"></i> Não concluído
-                    </span>
-                </td>
-
-
-                <td class="text-center">
-                    <div class="d-flex flex-column gap-2">
-                        <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Ver detalhes do lembrete">
-                            <i class="bi bi-eye"></i> Detalhes
-                        </a>
-                        <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Editar este lembrete">
-                            <i class="bi bi-pencil"></i> Editar
-                        </a>
-                        <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Excluir este lembrete">
-                            <i class="bi bi-trash"></i> Excluir
-                        </a>
-                    </div>
-                </td>
-            </tr>
+            
         </tbody>
     </table>
 
@@ -216,7 +156,7 @@
                             <label for="nome" class="form-label">Título</label>
                             <input type="text" class="form-control" id="Título" name="Titulo" required>
                         </div>
-
+                        
                         <div class="mb-3">
                             <label for="nome" class="form-label">Descrição</label>
                             <input type="text" class="form-control" id="Descrição" name="Descricao" required>
@@ -244,16 +184,32 @@
                                 </select>
                             </div>
 
-                            <select data-mdb-select-init multiple>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="4">Four</option>
-                                <option value="5">Five</option>
-                                <option value="6">Six</option>
-                                <option value="7">Seven</option>
-                                <option value="8">Eight</option>
-                            </select>
+                            <div class="mb-3">
+                                <label for="contatos-lista" class="form-label">Selecione um ou mais contatos</label>
+                                <select id="contatos-lista" name="contatos" class="form-select" multiple style="width: 100%;">
+                                    @if(ViewBag.ListaContatos != null && ViewBag.ListaContatos.Count > 0)
+                                    {
+                                        @foreach(Contato contato in ViewBag.ListaContatos)
+                                        {
+                                            <option value="@contato.Id">@contato.Nome</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="lugares-lista" class="form-label">Selecione um ou mais lugares</label>
+                                <select id="lugares-lista" name="lugares" class="form-select" multiple style="width: 100%;">
+                                    @if(ViewBag.ListaLugares != null && ViewBag.ListaLugares.Count > 0)
+                                    {
+                                        @foreach(Lugare lugares in ViewBag.ListaLugares)
+                                        {
+                                            <option value="@lugares.Id">@lugares.Nome</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -284,3 +240,17 @@
 
 
 </div>
+
+@section Scripts {
+<script>
+    $(document).ready(function () {
+        $('#lugares-lista').select2({
+            dropdownParent: $('#novoLembreteModal')
+        });
+
+        $('#contatos-lista').select2({
+            dropdownParent: $('#novoLembreteModal')
+        });
+    });
+</script>
+}
