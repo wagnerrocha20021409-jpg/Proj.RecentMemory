@@ -1169,7 +1169,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         }
       ],
       "EndpointProperties": [
@@ -1214,7 +1218,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         }
       ],
       "EndpointProperties": [
@@ -1251,7 +1259,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         }
       ],
       "EndpointProperties": [
@@ -1288,7 +1300,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         }
       ],
       "EndpointProperties": [

@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "MDjL+BV112aP6ASWUncBCnlB4PLG3QiO0DmCQNwmTGo=",
+=======
   "Hash": "Ltfv1QOalYSeqKT4DcEf/ZY/5sFkvGeKAuU9dyMiAhM=",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
   "Source": "RecentMemory",
   "BasePath": "_content/RecentMemory",
   "Mode": "Default",
@@ -5456,7 +5460,53 @@
       "OriginalItemSpec": "wwwroot\\imagem\\medica.jpg"
     },
     {
+<<<<<<< HEAD
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/Memory_white#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vaw2yz2p00",
+      "Integrity": "Bz5w9qP/jpcAAxrmYWU9qLWZMau0hmCghh9T8QPOLEA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\Memory_white.png"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory.png",
+      "SourceId": "RecentMemory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\",
+      "BasePath": "_content/RecentMemory",
+      "RelativePath": "imagem/Memory#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4w5tungq1s",
+      "Integrity": "7CLhJic4zuzNzN2uz4DK/CUJ/G0EP3oQO85QMKBowxU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\Memory.png"
+    },
+    {
+      "Identity": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Selection.png",
+=======
       "Identity": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "SourceId": "RecentMemory",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\",
@@ -12469,7 +12519,11 @@
     },
     {
       "Route": "imagem/Memory_white.png",
+<<<<<<< HEAD
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+=======
       "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12490,7 +12544,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         },
         {
           "Name": "Cache-Control",
@@ -12506,7 +12564,11 @@
     },
     {
       "Route": "imagem/Memory_white.vaw2yz2p00.png",
+<<<<<<< HEAD
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+=======
       "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory_white.png",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12527,7 +12589,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         },
         {
           "Name": "Cache-Control",
@@ -12551,7 +12617,11 @@
     },
     {
       "Route": "imagem/Memory.4w5tungq1s.png",
+<<<<<<< HEAD
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory.png",
+=======
       "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory.png",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12572,7 +12642,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         },
         {
           "Name": "Cache-Control",
@@ -12596,7 +12670,11 @@
     },
     {
       "Route": "imagem/Memory.png",
+<<<<<<< HEAD
+      "AssetFile": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory.png",
+=======
       "AssetFile": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory.png",
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12617,7 +12695,11 @@
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+=======
           "Value": "Tue, 09 Dec 2025 00:57:30 GMT"
+>>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
         },
         {
           "Name": "Cache-Control",
