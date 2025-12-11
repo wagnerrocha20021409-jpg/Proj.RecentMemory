@@ -1143,6 +1143,170 @@
       ]
     },
     {
+      "Route": "imagem/Memory.4w5tungq1s.png",
+      "AssetFile": "imagem/Memory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7CLhJic4zuzNzN2uz4DK/CUJ/G0EP3oQO85QMKBowxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4w5tungq1s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7CLhJic4zuzNzN2uz4DK/CUJ/G0EP3oQO85QMKBowxU="
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/Memory.png"
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Memory.png",
+      "AssetFile": "imagem/Memory.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7CLhJic4zuzNzN2uz4DK/CUJ/G0EP3oQO85QMKBowxU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 22:58:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7CLhJic4zuzNzN2uz4DK/CUJ/G0EP3oQO85QMKBowxU="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Memory_white.png",
+      "AssetFile": "imagem/Memory_white.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bz5w9qP/jpcAAxrmYWU9qLWZMau0hmCghh9T8QPOLEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bz5w9qP/jpcAAxrmYWU9qLWZMau0hmCghh9T8QPOLEA="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/Memory_white.vaw2yz2p00.png",
+      "AssetFile": "imagem/Memory_white.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bz5w9qP/jpcAAxrmYWU9qLWZMau0hmCghh9T8QPOLEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Dec 2025 23:17:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vaw2yz2p00"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bz5w9qP/jpcAAxrmYWU9qLWZMau0hmCghh9T8QPOLEA="
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/Memory_white.png"
+        }
+      ]
+    },
+    {
       "Route": "imagem/Selection.png",
       "AssetFile": "imagem/Selection.png",
       "Selectors": [],
