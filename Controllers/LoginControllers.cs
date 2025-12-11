@@ -9,8 +9,7 @@ namespace RecentMemory.Controllers
 {
     public class LoginController : Controller
     {
-         RecentMemoryContext context = new RecentMemoryContext();
-        private string Nome;
+        RecentMemoryContext context = new RecentMemoryContext();
 
         public IActionResult Index()
         {

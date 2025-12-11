@@ -18,7 +18,7 @@ public partial class RecentMemoryContext : DbContext
 
     public virtual DbSet<Contato> Contatos { get; set; }
 
-    public virtual DbSet<ContatosLembrete> ContatosLembretes { get; set; }
+    public virtual DbSet<ContatoLembrete> ContatosLembretes { get; set; }
 
     public virtual DbSet<Lembrete> Lembretes { get; set; }
 
@@ -33,12 +33,11 @@ public partial class RecentMemoryContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=RecentMemory;Integrated Security=True;");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Contato>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Contatos__3213E83FCA3F5834");
+            entity.HasKey(e => e.Id).HasName("PK__Contatos__3213E83FDE552535");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Nome)
@@ -46,57 +45,57 @@ public partial class RecentMemoryContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("nome");
             entity.Property(e => e.Telefone)
-                .HasMaxLength(15)
+                .HasMaxLength(30)
                 .IsUnicode(false)
                 .HasColumnName("telefone");
             entity.Property(e => e.UsuarioId).HasColumnName("Usuario_id");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Contatos)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("FK__Contatos__Usuari__6477ECF3");
+                .HasConstraintName("FK__Contatos__Usuari__4E88ABD4");
         });
 
-        modelBuilder.Entity<ContatosLembrete>(entity =>
+        modelBuilder.Entity<ContatoLembrete>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__contatos__3213E83FC3883FB5");
+            entity.ToTable("ContatoLembretes");
 
-            entity.ToTable("contatosLembretes");
+            entity.HasKey(e => e.Id).HasName("PK__ContatoL__3213E83FFC7AEB73");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.ContatosId).HasColumnName("Contatos_id");
             entity.Property(e => e.LembretesId).HasColumnName("Lembretes_id");
 
-            entity.HasOne(d => d.Contatos).WithMany(p => p.ContatosLembretes)
+            entity.HasOne(d => d.Contatos).WithMany(p => p.ContatoLembretes)
                 .HasForeignKey(d => d.ContatosId)
-                .HasConstraintName("FK__contatosL__Conta__693CA210");
+                .HasConstraintName("FK__ContatoLe__Conta__5AEE82B9");
 
-            entity.HasOne(d => d.Lembretes).WithMany(p => p.ContatosLembretes)
+            entity.HasOne(d => d.Lembretes).WithMany(p => p.ContatoLembretes)
                 .HasForeignKey(d => d.LembretesId)
-                .HasConstraintName("FK__contatosL__Lembr__68487DD7");
+                .HasConstraintName("FK__ContatoLe__Lembr__5BE2A6F2");
         });
 
         modelBuilder.Entity<Lembrete>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Lembrete__3213E83F329B2353");
+            entity.HasKey(e => e.Id).HasName("PK__Lembrete__3213E83FF8E29A18");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Lembrete1)
-                .HasColumnType("text")
-                .HasColumnName("lembrete");
-            entity.Property(e => e.Nome)
-                .HasMaxLength(120)
+            entity.Property(e => e.DataLembrete).HasColumnType("datetime");
+            entity.Property(e => e.Descricao).HasColumnType("text");
+            entity.Property(e => e.Status)
+                .HasMaxLength(1)
                 .IsUnicode(false)
-                .HasColumnName("nome");
+                .IsFixedLength();
+            entity.Property(e => e.Titulo).HasColumnType("text");
             entity.Property(e => e.UsuarioId).HasColumnName("Usuario_id");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Lembretes)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("FK__Lembretes__Usuar__619B8048");
+                .HasConstraintName("FK__Lembretes__Usuar__4BAC3F29");
         });
 
         modelBuilder.Entity<Lugare>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Lugares__3213E83F1CB1850A");
+            entity.HasKey(e => e.Id).HasName("PK__Lugares__3213E83F7BAD64EB");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Nome)
@@ -107,9 +106,9 @@ public partial class RecentMemoryContext : DbContext
 
         modelBuilder.Entity<LugaresLembrete>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__lugaresL__3213E83FED46BFAD");
+            entity.ToTable("LugaresLembretes");
 
-            entity.ToTable("lugaresLembretes");
+            entity.HasKey(e => e.Id).HasName("PK__LugaresL__3213E83F3D63D162");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.LembretesId).HasColumnName("Lembretes_id");
@@ -117,16 +116,16 @@ public partial class RecentMemoryContext : DbContext
 
             entity.HasOne(d => d.Lembretes).WithMany(p => p.LugaresLembretes)
                 .HasForeignKey(d => d.LembretesId)
-                .HasConstraintName("FK__lugaresLe__Lembr__6D0D32F4");
+                .HasConstraintName("FK__LugaresLe__Lembr__5812160E");
 
             entity.HasOne(d => d.Lugares).WithMany(p => p.LugaresLembretes)
                 .HasForeignKey(d => d.LugaresId)
-                .HasConstraintName("FK__lugaresLe__Lugar__6C190EBB");
+                .HasConstraintName("FK__LugaresLe__Lugar__571DF1D5");
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Usuario__3213E83F44FB5001");
+            entity.HasKey(e => e.Id).HasName("PK__Usuario__3213E83FCF4A5AAA");
 
             entity.ToTable("Usuario");
 
@@ -140,16 +139,14 @@ public partial class RecentMemoryContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("nome");
             entity.Property(e => e.Senha)
-                .HasMaxLength(80)
+                .HasMaxLength(120)
                 .IsUnicode(false)
                 .HasColumnName("senha");
         });
 
         modelBuilder.Entity<UsuarioLugare>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__usuarioL__3213E83F584D043E");
-
-            entity.ToTable("usuarioLugares");
+            entity.HasKey(e => e.Id).HasName("PK__UsuarioL__3213E83F6EEF66FE");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.LugaresId).HasColumnName("Lugares_id");
@@ -157,11 +154,11 @@ public partial class RecentMemoryContext : DbContext
 
             entity.HasOne(d => d.Lugares).WithMany(p => p.UsuarioLugares)
                 .HasForeignKey(d => d.LugaresId)
-                .HasConstraintName("FK__usuarioLu__Lugar__6FE99F9F");
+                .HasConstraintName("FK__UsuarioLu__Lugar__5441852A");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.UsuarioLugares)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("FK__usuarioLu__Usuar__70DDC3D8");
+                .HasConstraintName("FK__UsuarioLu__Usuar__534D60F1");
         });
 
         OnModelCreatingPartial(modelBuilder);

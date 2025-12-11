@@ -1,0 +1,112 @@
+@{
+  ViewData["Title"] = "Configurações";
+}
+
+
+<!-- ... sua navbar ... -->
+
+<div class="user-menu" style="position: relative;">
+  <form>
+    <button id="avatarButton" class="avatar-button d-flex align-items-center gap-3" aria-haspopup="menu"
+      aria-expanded="false" aria-controls="userMenu"
+      style="border-left: 1px solid #e5e7eb; padding-left: 1.5rem; background: none; border: none; cursor: pointer;">
+      <div
+        style="width: 40px; height: 40px; background: #0ea5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">
+        ~/imagem/39779.png
+      </div>
+      <p style="margin: 0">@User.Identity.Name</p>
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M5 7l5 5 5-5H5z"></path>
+      </svg>
+    </button>
+
+    <div id="userMenu" role="menu" aria-labelledby="avatarButton" hidden class="dropdown">
+      IndexMeu perfil</a>
+
+      IndexConfigurações</a>
+
+      <!-- Logout via POST para segurança -->
+      Logout
+      <button type="submit" class="dropdown-item" role="menuitem">Sair</button>
+  </form>
+</div>
+</div>
+
+@section Scripts {
+  <script>
+    (function () {
+      const btn = document.getElementById('avatarButton');
+      const menu = document.getElementById('userMenu');
+
+      function openMenu() {
+        menu.hidden = false;
+        btn.setAttribute('aria-expanded', 'true');
+        const firstItem = menu.querySelector('.dropdown-item');
+        if (firstItem) firstItem.focus();
+      }
+      function closeMenu() {
+        menu.hidden = true;
+        btn.setAttribute('aria-expanded', 'false');
+      }
+      function toggleMenu() {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        isOpen ? closeMenu() : openMenu();
+      }
+
+      btn.addEventListener('click', (e) => { e.stopPropagation(); toggleMenu(); });
+      document.addEventListener('click', (e) => {
+        if (!menu.hidden && !menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !menu.hidden) { closeMenu(); btn.focus(); }
+      });
+      menu.addEventListener('keydown', (e) => {
+        const items = Array.from(menu.querySelectorAll('.dropdown-item, .dropdown-item button'));
+        const idx = items.indexOf(document.activeElement);
+        if (e.key === 'ArrowDown') { e.preventDefault(); (items[idx + 1] || items[0]).focus(); }
+        if (e.key === 'ArrowUp') { e.preventDefault(); (items[idx - 1] || items[items.length - 1]).focus(); }
+        if (e.key === 'Tab') { closeMenu(); }
+      });
+    })();
+  </script>
+}
+
+<style>
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 220px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 6px;
+    z-index: 1000;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #111827;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background: #f3f4f6;
+    outline: none;
+  }
+
+  .avatar-button:focus {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+  }
+</style>

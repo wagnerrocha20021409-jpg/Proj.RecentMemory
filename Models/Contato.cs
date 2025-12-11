@@ -13,7 +13,7 @@ public partial class Contato
 
     public int? UsuarioId { get; set; }
 
-    public virtual ICollection<ContatosLembrete> ContatosLembretes { get; set; } = new List<ContatosLembrete>();
+    public virtual ICollection<ContatoLembrete> ContatoLembretes { get; set; } = new List<ContatoLembrete>();
 
     public virtual Usuario? Usuario { get; set; }
 }

@@ -7,13 +7,19 @@ public partial class Lembrete
 {
     public int Id { get; set; }
 
-    public string? Nome { get; set; }
-
-    public string? Lembrete1 { get; set; }
+    public string? Titulo { get; set; }
 
     public int? UsuarioId { get; set; }
 
-    public virtual ICollection<ContatosLembrete> ContatosLembretes { get; set; } = new List<ContatosLembrete>();
+    public string? Descricao { get; set; }
+
+    public DateTime? DataLembrete { get; set; }
+
+    public int? Prioridade { get; set; }
+
+    public string? Status { get; set; }
+
+    public virtual ICollection<ContatoLembrete> ContatoLembretes { get; set; } = new List<ContatoLembrete>();
 
     public virtual ICollection<LugaresLembrete> LugaresLembretes { get; set; } = new List<LugaresLembrete>();
 
