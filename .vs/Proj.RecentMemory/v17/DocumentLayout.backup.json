@@ -3,12 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|c:\\users\\priscila.lsjoao\\desktop\\backend\\proj.recentmemory\\contexts\\recentmemorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|solutionrelative:contexts\\recentmemorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|c:\\users\\priscila.lsjoao\\desktop\\backend\\proj.recentmemory\\controllers\\lembretescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|solutionrelative:controllers\\lembretescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|c:\\users\\priscila.lsjoao\\desktop\\backend\\proj.recentmemory\\contexts\\recentmemorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6157E7D7-3A4E-D426-0818-3CB1661DDB33}|RecentMemory.csproj|solutionrelative:contexts\\recentmemorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\priscila.lsjoao\\AppData\\Local\\SourceServer\\5a14077b4955c44a08dd6e21f06e76ba3a9ee313f205879fb7f4fda7a86a9dd5\\Controllers\\LembretesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,26 +25,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "LembretesController.cs",
+              "DocumentMoniker": "C:\\Users\\priscila.lsjoao\\AppData\\Local\\SourceServer\\5a14077b4955c44a08dd6e21f06e76ba3a9ee313f205879fb7f4fda7a86a9dd5\\Controllers\\LembretesController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\5a14077b4955c44a08dd6e21f06e76ba3a9ee313f205879fb7f4fda7a86a9dd5\\Controllers\\LembretesController.cs",
+              "ToolTip": "C:\\Users\\priscila.lsjoao\\AppData\\Local\\SourceServer\\5a14077b4955c44a08dd6e21f06e76ba3a9ee313f205879fb7f4fda7a86a9dd5\\Controllers\\LembretesController.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\5a14077b4955c44a08dd6e21f06e76ba3a9ee313f205879fb7f4fda7a86a9dd5\\Controllers\\LembretesController.cs [Somente Leitura]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAIAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T23:16:15.53Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RecentMemoryContext.cs",
               "DocumentMoniker": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\Contexts\\RecentMemoryContext.cs",
               "RelativeDocumentMoniker": "Contexts\\RecentMemoryContext.cs",
               "ToolTip": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\Contexts\\RecentMemoryContext.cs",
               "RelativeToolTip": "Contexts\\RecentMemoryContext.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAswHEAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAiwKQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T23:13:33.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LembretesController.cs",
               "DocumentMoniker": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\Controllers\\LembretesController.cs",
               "RelativeDocumentMoniker": "Controllers\\LembretesController.cs",
               "ToolTip": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\Controllers\\LembretesController.cs",
               "RelativeToolTip": "Controllers\\LembretesController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAADwvzAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAswHUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T23:09:32.087Z",
               "EditorCaption": ""

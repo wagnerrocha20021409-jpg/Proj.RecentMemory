@@ -164,10 +164,5 @@ public partial class RecentMemoryContext : DbContext
         OnModelCreatingPartial(modelBuilder);
     }
 
-    internal void SaveChanges()
-    {
-        throw new NotImplementedException();
-    }
-
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

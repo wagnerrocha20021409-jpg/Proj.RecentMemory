@@ -79,7 +79,73 @@ namespace RecentMemory.Controllers
             // Salva tudo de uma vez
             context.SaveChanges();
 
-             return RedirectToAction("Index");
+            return RedirectToAction("Index");
         }
+
+        [HttpDelete("Remover/{id}")]
+        public IActionResult Remover(int id)
+        {
+            // Procurando lugares que contenham
+            var listaLugaresLembretes = context.LugaresLembretes.Where(x => x.LembretesId == id).ToList();
+
+            if (listaLugaresLembretes != null && listaLugaresLembretes.Count > 0)
+            {
+                foreach (var lg in listaLugaresLembretes)
+                {
+                    context.Remove(lg);
+                }
+
+                context.SaveChanges();
+            }
+
+            // Procurando contatos que contenham
+            var listaContatosLembretes = context.ContatosLembretes.Where(x => x.LembretesId == id).ToList();
+
+            if (listaContatosLembretes != null && listaContatosLembretes.Count > 0)
+            {
+                foreach (var ct in listaContatosLembretes)
+                {
+                    context.Remove(ct);
+                }
+
+                context.SaveChanges();
+            }
+
+            Lembrete lembrete = context.Lembretes.FirstOrDefault(l => l.Id == id);
+
+            context.Remove(lembrete);
+
+            context.SaveChanges();
+
+            return RedirectToAction("Index", "Lembretes");
+
+        }
+        
+          
+            [HttpPut("Editar")]
+            public IActionResult Editar([FromBody] Lembrete lembreteAtualizado)
+            {
+                var lembreteDb = context.Lembretes.FirstOrDefault(l => l.Id == lembreteAtualizado.Id);
+                if (lembreteDb == null)
+                {
+
+                    return NotFound();
+
+                }
+
+                lembreteDb.Titulo = lembreteAtualizado.Titulo;
+                lembreteDb.Descricao = lembreteAtualizado.Descricao;
+                // lembreteDb.Data = lembreteAtualizado.Data;
+                lembreteDb.Prioridade = lembreteAtualizado.Prioridade;
+                // lembreteDb.Concluido = lembreteAtualizado.Concluido;
+                
+              
+
+                context.SaveChanges();
+
+                return Ok(new { message = "Lembrete atualizado com sucesso!" });
+            }
+
+
     }
-} 
+}

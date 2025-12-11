@@ -116,18 +116,15 @@
 
                         <td class="text-center">    
                             <div class="d-flex flex-column gap-2">
-                                <a href="#" class="btn btn-md btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Ver detalhes do lembrete">
-                                    <i class="bi bi-eye"></i> Detalhes
-                                </a>
-                                <a href="#" class="btn btn-md btn-warning text-dark" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Editar este lembrete">
+                                
+                                <button class="btn btn-md btn-warning text-dark" title="Editar este lembrete"
+                                        onclick="editarLembrete(id)"> 
                                     <i class="bi bi-pencil"></i> Editar
-                                </a>
-                                <a href="#" class="btn btn-md btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Excluir este lembrete">
+                                </button>
+
+                                <button onclick="eliminarLembrete(@lembrete.Id)" class="btn btn-md btn-danger" title="Excluir este lembrete">
                                     <i class="bi bi-trash"></i> Excluir
-                                </a>
+                                </button>
                             </div>
                         </td>
                     </tr>
@@ -243,14 +240,36 @@
 
 @section Scripts {
 <script>
-    $(document).ready(function () {
-        $('#lugares-lista').select2({
-            dropdownParent: $('#novoLembreteModal')
+        $(document).ready(function () {
+            $('#lugares-lista').select2({
+                dropdownParent: $('#novoLembreteModal')
+            });
+
+            $('#contatos-lista').select2({
+                dropdownParent: $('#novoLembreteModal')
+            });
         });
 
-        $('#contatos-lista').select2({
-            dropdownParent: $('#novoLembreteModal')
-        });
-    });
+
+        function eliminarLembrete(lembreteId) {
+            if(confirm("Você tem certeza que quer remover o lembrete?"))
+            {
+                fetch("/Lembretes/Remover/" + lembreteId, {
+                    method: "DELETE"
+                });
+            }
+        }
+
+
+     function editarLembrete(lembreteId) {
+        if(confirm("Você tem certeza que quer editar o lembrete?"))
+        {
+         
+            fetch("/Lembretes/Editar/" + lembreteId, {
+                method: "PUT"
+            });
+        }
+    }
+     
 </script>
 }
