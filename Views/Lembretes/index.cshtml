@@ -12,7 +12,7 @@
         <a>
             <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novoLembreteModal"
                 style="background-color: #0ea5e9; border: none; padding: 12px 30px; border-radius: 8px;">
-                <i class="bi bi-plus-circle"></i> Criar Novo Lembrete
+                <i class="bi bi-plus-circle"></i> Novo Lembrete
             </button>
         </a>
     </div>
@@ -35,6 +35,81 @@
         Este sistema foi feito para ajudar pessoas como você a não esquecer tarefas importantes.
     </div>
 
+    <!-- CARDS DE DESTAQUE -->
+    <div class="row mb-4">
+        @if (ViewBag.ListaLembretes != null && ViewBag.ListaLembretes.Count > 0)
+        {
+            @foreach (Lembrete lembrete in ViewBag.ListaLembretes)
+            {
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-1">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="card-title">@lembrete.Titulo</h5>
+
+                            <div class="dropdown">
+                                <button class="btn btn-link text-dark p-0" data-bs-toggle="dropdown">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item"  onclick="eliminarLembrete(@lembrete.Id)"  href="#"><i class="bi bi-trash"></i> Excluir</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@lembrete.Descricao</p>
+
+                            <div class="">
+                                @if (lembrete.Prioridade == 3)
+                                {
+                                    <span class="w-25 badge bg-danger">Alta</span>
+                                }
+                                else if (lembrete.Prioridade == 2)
+                                {
+                                    <span class="w-25 badge bg-warning">Média</span>
+                                }
+                                else
+                                {
+                                    <span class="w-25 badge bg-success">Baixa</span>
+                                }
+
+
+                                <span
+                                    class="w-25 badge text-black text-start fs-6">@(lembrete.DataLembrete?.ToString("dd/MM/yyyy"))</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            @if (lembrete.ContatoLembretes?.Count > 0)
+                            {
+                                <span class="fw-semibold fs-6">Contatos</span>
+                                <div class="gap-2 d-flex mb-3">
+
+                                    @foreach (ContatoLembrete contatos in lembrete.ContatoLembretes)
+                                    {
+                                        <span class="badge text-secondary fs-6 fw-medium">@contatos.Contatos.Nome</span>
+                                    }
+                                </div>
+                            }
+
+                            @if (lembrete.LugaresLembretes?.Count > 0)
+                            {
+                                <span class="fw-semibold fs-6">Lugares</span>
+                                <div class="gap-2 d-flex">
+                                    @foreach (LugaresLembrete lugares in lembrete.LugaresLembretes)
+                                    {
+                                        <span class="badge text-secondary fs-6 fw-medium">@lugares.Lugares.Nome</span>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    @* 
     <!-- CARDS DE DESTAQUE -->
     <div class="row mb-4">
         <div class="col-md-4">
@@ -76,64 +151,7 @@
             <p class="card-text">Medicamento às 10h</p>
             <span class="badge bg-warning text-dark">Alta prioridade</span>
         </div>
-    </div>
-    <!-- TABELA DE LEMBRETES -->
-    <h4 class="fw-bold mt-4 mb-3">Lista de Lembretes</h4>
-
-    <table class="table table-hover table-bordered shadow-sm bg-white">
-        <thead class="table-primary">
-            <tr>
-                <th class="text-center">Título</th>
-                <th class="text-center">Descrição</th>
-                <th class="text-center">Data</th>
-                <th class="text-center">Prioridade</th>
-                <th class="text-center">Concluído</th>
-                <th class="text-center" style="width: 200px;">Ações</th>
-            </tr>
-        </thead>
-
-        <tbody>
-
-            @if(ViewBag.ListaLembretes != null && ViewBag.ListaLembretes.Count > 0)
-            {
-                @foreach(Lembrete lembrete in ViewBag.ListaLembretes)
-                {
-                    <tr>
-                        <td>@lembrete.Titulo</td>
-                        <td>@lembrete.Descricao</td>
-                        <td class="text-center">@lembrete.DataLembrete</td>
-
-                        @if(lembrete.Prioridade == 3)
-                        {
-                            <td class="text-center"><span class="badge bg-danger">Alta</span></td>
-                        }else if(lembrete.Prioridade == 2){
-                            <td class="text-center"><span class="badge bg-warning">Média</span></td>
-                        }else{
-                            <td class="text-center"><span class="badge bg-success">Baixa</span></td>
-                        }
-
-                        <td class="text-center"><span class="badge bg-secondary">Média</span></td>
-
-                        <td class="text-center">    
-                            <div class="d-flex flex-column gap-2">
-                                
-                                <button class="btn btn-md btn-warning text-dark" title="Editar este lembrete"
-                                        onclick="editarLembrete(id)"> 
-                                    <i class="bi bi-pencil"></i> Editar
-                                </button>
-
-                                <button onclick="eliminarLembrete(@lembrete.Id)" class="btn btn-md btn-danger" title="Excluir este lembrete">
-                                    <i class="bi bi-trash"></i> Excluir
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                }
-            }
-            <!-- Linha 3 -->
-            
-        </tbody>
-    </table>
+    </div> *@
 
     <!-- Modal Novo Lugar -->
     <div class="modal fade" id="novoLembreteModal" tabindex="-1">
@@ -153,7 +171,7 @@
                             <label for="nome" class="form-label">Título</label>
                             <input type="text" class="form-control" id="Título" name="Titulo" required>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="nome" class="form-label">Descrição</label>
                             <input type="text" class="form-control" id="Descrição" name="Descricao" required>
@@ -183,10 +201,11 @@
 
                             <div class="mb-3">
                                 <label for="contatos-lista" class="form-label">Selecione um ou mais contatos</label>
-                                <select id="contatos-lista" name="contatos" class="form-select" multiple style="width: 100%;">
-                                    @if(ViewBag.ListaContatos != null && ViewBag.ListaContatos.Count > 0)
+                                <select id="contatos-lista" name="contatos" class="form-select" multiple
+                                    style="width: 100%;">
+                                    @if (ViewBag.ListaContatos != null && ViewBag.ListaContatos.Count > 0)
                                     {
-                                        @foreach(Contato contato in ViewBag.ListaContatos)
+                                        @foreach (Contato contato in ViewBag.ListaContatos)
                                         {
                                             <option value="@contato.Id">@contato.Nome</option>
                                         }
@@ -196,10 +215,11 @@
 
                             <div class="mb-3">
                                 <label for="lugares-lista" class="form-label">Selecione um ou mais lugares</label>
-                                <select id="lugares-lista" name="lugares" class="form-select" multiple style="width: 100%;">
-                                    @if(ViewBag.ListaLugares != null && ViewBag.ListaLugares.Count > 0)
+                                <select id="lugares-lista" name="lugares" class="form-select" multiple
+                                    style="width: 100%;">
+                                    @if (ViewBag.ListaLugares != null && ViewBag.ListaLugares.Count > 0)
                                     {
-                                        @foreach(Lugare lugares in ViewBag.ListaLugares)
+                                        @foreach (Lugare lugares in ViewBag.ListaLugares)
                                         {
                                             <option value="@lugares.Id">@lugares.Nome</option>
                                         }
@@ -218,7 +238,6 @@
     </div>
 
     <!-- ÁREA DE DICAS -->
-
 
     <footer class="text-center mt-5 mb-3">
         <div class="container">
@@ -239,7 +258,7 @@
 </div>
 
 @section Scripts {
-<script>
+    <script>
         $(document).ready(function () {
             $('#lugares-lista').select2({
                 dropdownParent: $('#novoLembreteModal')
@@ -252,8 +271,7 @@
 
 
         function eliminarLembrete(lembreteId) {
-            if(confirm("Você tem certeza que quer remover o lembrete?"))
-            {
+            if (confirm("Você tem certeza que quer remover o lembrete?")) {
                 fetch("/Lembretes/Remover/" + lembreteId, {
                     method: "DELETE"
                 });
@@ -261,15 +279,14 @@
         }
 
 
-     function editarLembrete(lembreteId) {
-        if(confirm("Você tem certeza que quer editar o lembrete?"))
-        {
-         
-            fetch("/Lembretes/Editar/" + lembreteId, {
-                method: "PUT"
-            });
+        function editarLembrete(lembreteId) {
+            if (confirm("Você tem certeza que quer editar o lembrete?")) {
+
+                fetch("/Lembretes/Editar/" + lembreteId, {
+                    method: "PUT"
+                });
+            }
         }
-    }
-     
-</script>
+
+    </script>
 }

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RecentMemory.Contexts;
 using RecentMemory.Models;
 
@@ -19,23 +20,12 @@ namespace RecentMemory.Controllers
             var listaContatos = context.Contatos.ToList();
             ViewBag.ListaContatos = listaContatos;
 
-            var listaLembretes = context.Lembretes.ToList();
+            var listaLembretes = context.Lembretes.Include(x => x.LugaresLembretes).ThenInclude(x => x.Lugares).Include(x => x.ContatoLembretes).ThenInclude(x => x.Contatos).OrderBy(x => x.Prioridade).ToList();
 
             ViewBag.listaLembretes = listaLembretes;
 
             return View();
         }
-
-
-        // [Route("AdicionarLembrete/{idLembrete}")]
-        // public IActionResult Adicionar(int idLembrete)
-        // {
-        //     Lembrete lembrete  = context.Lembretes.FirstOrDefault(x => x.Id == idLembrete);
-
-        //     ViewBag.Lembrete = lembrete;
-
-        //     return View();
-        // }
 
         [HttpPost]
         public IActionResult AdicionarLembrete(Lembrete Lembrete, string[] contatos, string[] lugares)
@@ -117,8 +107,7 @@ namespace RecentMemory.Controllers
 
             context.SaveChanges();
 
-            return RedirectToAction("Index", "Lembretes");
-
+            return RedirectToAction("Index");
         }
         
           
