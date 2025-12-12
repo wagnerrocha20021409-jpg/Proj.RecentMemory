@@ -25,17 +25,6 @@
       "PackagePath": "staticwebassets\\imagem\\Hospital.webp"
     },
     {
-<<<<<<< HEAD
-      "Id": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory.png",
-      "PackagePath": "staticwebassets\\imagem\\Memory.png"
-    },
-    {
-      "Id": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Memory_white.png",
-      "PackagePath": "staticwebassets\\imagem\\Memory_white.png"
-    },
-    {
-      "Id": "C:\\Users\\wagner.roliveira6\\OneDrive - SENAC - SP\\Área de Trabalho\\RecentMemory\\RecentMemory\\wwwroot\\imagem\\Selection.png",
-=======
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Memory.png",
       "PackagePath": "staticwebassets\\imagem\\Memory.png"
     },
@@ -45,7 +34,6 @@
     },
     {
       "Id": "C:\\Users\\priscila.lsjoao\\Desktop\\BackEnd\\Proj.RecentMemory\\wwwroot\\imagem\\Selection.png",
->>>>>>> 8aaf4ec0695109d05c4a2163b2c82d79469f5a85
       "PackagePath": "staticwebassets\\imagem\\Selection.png"
     },
     {
